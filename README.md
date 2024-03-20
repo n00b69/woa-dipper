@@ -1,9 +1,9 @@
 > [!warning]
 > Guide is under development and is missing files. **Do not use.**
 
-<img align="right" src="https://github.com/n00b69/woapolaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woaenchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the OnePlus 6
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/WinOnMIX2S)
 
 ## ⚠️ Warning
