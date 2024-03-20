@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woapolaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woaenchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the OnePlus 6
 
 ## Updating drivers
 
@@ -13,10 +13,10 @@
   
 - [Msc script](https://github.com/n00b69/woapolaris/releases/download/Files/msc.sh)
   
-- [TWRP](https://github.com/n00b69/woapolaris/releases/download/Files/twrp.img) (should already be installed)
+- [TWRP]() FILE NEEDED (should already be installed)
 
 #### Boot to TWRP
-> If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
+> If OnePlus has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
