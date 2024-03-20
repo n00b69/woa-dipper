@@ -3,7 +3,7 @@
 
 <img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the OnePlus 6
+# Running Windows on the DEVICENAME
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/WinOnMIX2S)
 
 ## ⚠️ Warning
