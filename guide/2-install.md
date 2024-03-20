@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the OnePlus 6
+# Running Windows on the DEVICENAME
 
 ## Installing Windows
 
@@ -13,6 +13,8 @@
 - [Drivers]() FILE NEEDED
   
 - [Msc script]() FILE NEEDED
+
+- [Parted]() FILE NEEDED
   
 - [TWRP]() FILE NEEDED (should already be installed)
 
@@ -36,7 +38,60 @@ adb push msc.sh / && adb shell sh msc.sh
 diskpart
 ```
 
+#### Finding your phone
+> This will list all connected disks
+```cmd
+lis dis
+```
 
+#### Selecting your phone
+> Replace $ with the actual number of your phone (its size should be around 128GB)
+```cmd
+sel dis $
+```
+
+#### Listing your phone's partitions
+> This will list your device's partitions
+```cmd
+lis par
+```
+
+#### Selecting the Windows partition
+> Replace $ with the partition number of Windows (should be 22)
+```cmd
+sel par $
+```
+
+#### Formatting Windows drive
+```cmd
+format quick fs=ntfs label="WIN"
+```
+
+#### Add letter to Windows
+```cmd
+assign letter x
+```
+
+#### Selecting the ESP partition
+> Replace $ with the partition number of ESP (should be 23)
+```cmd
+sel par $
+```
+
+#### Formatting ESP drive
+```cmd
+format quick fs=fat32 label="ESP"
+```
+
+#### Add letter to ESP
+```cmd
+assign letter y
+```
+
+#### Exit diskpart
+```cmd
+exit
+```
 
 ### Installing Windows
 > Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
@@ -47,7 +102,16 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
+#### Running parted
+```cmd
+adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+```
 
+#### Making ESP bootable
+> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 23
+```cmd
+set $ esp on
+```
 
 #### Installing Drivers
 > Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
