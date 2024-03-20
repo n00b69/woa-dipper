@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woapolaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woaenchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the OnePlus 6
 
 ## Root guide
 
@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woapolaris/releases/download/Files/twrp.img)
+- [TWRP]() FILE NEEDED
 
 ##### Boot TWRP
 > If your recovery has been replaced back to stock, flash it again in fastboot with:
