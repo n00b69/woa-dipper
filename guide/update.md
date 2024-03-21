@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Running Windows on the DEVICENAME
+# Running Windows on the Xiaomi Mi 8
 
 ## Updating drivers
 
