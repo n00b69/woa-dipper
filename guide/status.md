@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the OnePlus 6
+# Running Windows on the DEVICENAME
 
 ## Project Status
 
@@ -23,12 +23,12 @@ The project is in development. Expect some updates in the future.
 - [x] Wi-Fi
 
 #### Sensors
-- [x] Accelerometer
+- [ ] Accelerometer
 - [ ] Fingerprint
 - [x] GPS
-- [x] Gyroscope
+- [ ] Gyroscope
 - [ ] Light sensor
-- [x] Magnetometer
+- [ ] Magnetometer
 - [ ] Proximity
 
 #### Security
