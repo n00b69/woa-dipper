@@ -8,7 +8,7 @@ The project is in development. Expect some updates in the future.
 
 #### Features
 
-- [X] Audio 
+- [ ] Audio 
 - [X] Battery status
 - [x] Bluetooth
 - [x] Brightness 
