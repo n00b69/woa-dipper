@@ -3,8 +3,7 @@
 # Running Windows on the Xiaomi Mi 8
 
 ## Project Status
-
-The project is in development. Expect some updates in the future.
+This project is not actively maintained, updates may eventually appear, but don't expect them frequently
 
 #### Features
 
