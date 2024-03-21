@@ -17,19 +17,19 @@ This project is in an early stage, all the files here have been contributed by o
 ## Get started
 - [Project status](guide/status.md)
 
-- [Installation instructions](guide/1-partition.md) W.I.P DO NOT USE
+- [Installation instructions](guide/1-partition.md) W.I.P missing some files
 
 - [Troubleshooting](guide/troubleshooting.md)
 
 
 ## Miscellaneous
-- [Dualboot setup](guide/dualboot.md)
+- [Dualboot setup](guide/dualboot.md) W.I.P missing some files
 
 - [Additional materials](guide/materials.md)
 
-- [Update drivers](guide/update.md) W.I.P DO NOT USE
+- [Update drivers](guide/update.md) W.I.P missing some files
 
-- [Reinstall instructions](guide/2-install.md) W.I.P DO NOT USE
+- [Reinstall instructions](guide/2-install.md) W.I.P missing some files
 
 - [Uninstall instructions](guide/uninstall.md) W.I.P DO NOT USE
 
