@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the OnePlus 6
+# Running Windows on the DEVICENAME
 
 ## Partitioning your device
 
@@ -33,10 +33,11 @@
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-> [!IMPORTANT]
-> If you do anything incorrectly, you may wipe your UFS and render your device unusable.
-
+#### Backing up important files
 Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
+
+> [!warning]
+> **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
 
 #### Partitioning guide
 > Your DEVICENAME may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
