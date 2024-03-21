@@ -64,7 +64,7 @@ sel par $
 
 #### Formatting Windows drive
 ```cmd
-format quick fs=ntfs label="WIN"
+format quick fs=ntfs label="WINDIPPER"
 ```
 
 #### Add letter to Windows
@@ -80,7 +80,7 @@ sel par $
 
 #### Formatting ESP drive
 ```cmd
-format quick fs=fat32 label="ESP"
+format quick fs=fat32 label="ESPDIPPER"
 ```
 
 #### Add letter to ESP
@@ -93,16 +93,7 @@ assign letter y
 exit
 ```
 
-### Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
-
-```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
-```
-
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
-
-#### Running parted
+### Running parted
 ```cmd
 adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
 ```
@@ -112,6 +103,20 @@ adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cac
 ```cmd
 set $ esp on
 ```
+
+#### Exit parted
+```cmd
+quit
+```
+
+### Installing Windows
+> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
+
+```cmd
+dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+```
+
+> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
 #### Installing Drivers
 > Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
@@ -146,7 +151,7 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `lis vol` to find it, it's the one named "Windows"
+> Use `list volume` to find it, replace "$" with the actual number of **WINDIPPER**
 ```diskpart
 select volume <number>
 ```
@@ -157,9 +162,9 @@ remove letter x
 ```
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, it's the one named "ESP"
+> Use `list volume` to find it, replace "$" with the actual number of **ESPDIPPER**
 ```diskpart
-select volume <number>
+select volume $
 ```
 
 #### Unassign the letter Y
