@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the OnePlus 6
+# Running Windows on the DEVICENAME
 
 ## Updating drivers
 
@@ -11,12 +11,12 @@
   
 - [Drivers]() FILE NEEDED
   
-- [Msc script](https://github.com/n00b69/woapolaris/releases/download/Files/msc.sh)
+- [Msc script]() FILE NEEDED
   
 - [TWRP]() FILE NEEDED (should already be installed)
 
 #### Boot to TWRP
-> If OnePlus has replaced your recovery back to stock, flash it again in fastboot with:
+> If COMPANY has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
@@ -59,9 +59,6 @@ exit
 ```cmd
 dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
 ```
-
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
 
 ### Unassign disk letter
 > So that it doesn't stay there after disconnecting the device
