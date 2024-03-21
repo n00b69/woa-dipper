@@ -1,7 +1,7 @@
 > [!warning]
 > Guide is under development and is missing files. **Do not use.**
 
-<img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
 # Running Windows on the Xiaomi Mi 8
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/woadipper)
