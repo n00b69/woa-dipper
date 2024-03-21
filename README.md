@@ -1,5 +1,5 @@
 > [!warning]
-> Guide is under development and is missing files. **Do not use.**
+> Guide is under development and is missing files. **Use for references, find the files elsewhere.**
 
 <img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
