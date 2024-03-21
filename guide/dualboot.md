@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-enchilada/blob/main/enchilada.png" width="350" alt="Windows 11 running on enchilada">
 
-# Running Windows on the OnePlus 6
+# Running Windows on the DEVICENAME
 
 ## Dualboot guide
 
@@ -9,7 +9,7 @@
 
 - [UEFI image]() FILE NEEDED
 
-- [WOA Helper app](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/woahelper.apk)
+- [WOA Helper app](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/woahelper.apk)
 
 - [Switch To Android package]() FILE NEEDED
 
