@@ -9,7 +9,7 @@
 
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-uefi.img)
   
-- [Drivers]() FILE NEEDED
+- [Drivers](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-drivers.zip)
   
 - [Msc script](https://github.com/n00b69/woa-dipper/releases/download/Files/msc.sh)
   
