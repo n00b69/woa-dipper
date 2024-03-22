@@ -7,7 +7,7 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [UEFI image]() FILE NEEDED
+- [UEFI image](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-uefi.img)
   
 - [Drivers]() FILE NEEDED
   
