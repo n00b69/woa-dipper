@@ -7,7 +7,7 @@
 ### Prerequisites
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [UEFI image]() FILE NEEDED
+- [UEFI image](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-uefi.img)
 
 - [WOA Helper app](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/woahelper.apk)
 
