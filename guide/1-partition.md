@@ -9,9 +9,9 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP]() FILE NEEDED
+- [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
 
-- [Parted]() FILE NEEDED
+- [Parted](https://github.com/n00b69/woa-dipper/releases/download/Files/parted)
 
 ### Notes
 > [!WARNING]  
