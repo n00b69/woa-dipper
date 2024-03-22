@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP]() FILE NEEDED
+- [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
 
 ##### Boot TWRP
 > If your recovery has been replaced back to stock, flash it again in fastboot with:
