@@ -45,7 +45,7 @@ lis dis
 ```
 
 #### Selecting your phone
-> Replace $ with the actual number of your phone (its size should be around 128GB)
+> Replace $ with the actual number of your phone (it should be the last one)
 ```cmd
 sel dis $
 ```
@@ -153,7 +153,7 @@ diskpart
 #### Select the Windows volume of the phone
 > Use `list volume` to find it, replace "$" with the actual number of **WINDIPPER**
 ```diskpart
-select volume <number>
+select volume $
 ```
 
 #### Unassign the letter X
