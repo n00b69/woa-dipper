@@ -15,7 +15,9 @@
 - [Msc script](https://github.com/n00b69/woa-dipper/releases/download/Files/msc.sh)
 
 - [Parted](https://github.com/n00b69/woa-dipper/releases/download/Files/parted)
-  
+
+- [Devcfg (touch fix)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
+
 - [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img) (should already be installed)
 
 #### Boot to TWRP
@@ -177,13 +179,20 @@ remove letter y
 exit
 ```
 
-### Backing up boot images and flashing UEFI
+### Reboot to fastboot
+```cmd
+adb reboot bootloader
+```
+
+### Fixing touch
+> Replace "path\to" with the actual path to the image
+```cmd
+fastboot flash path\to\devcgf-dipper.img
+```
 
 #### Reboot your recovery
-> To remove the msc script
-- Reboot to recovery through TWRP, or run
 ```cmd
-adb reboot recovery
+fastboot reboot recovery
 ```
 
 #### Push the UEFI to your phone
