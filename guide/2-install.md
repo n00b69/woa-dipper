@@ -57,7 +57,7 @@ lis par
 ```
 
 #### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 22)
+> Replace $ with the partition number of Windows (should be 23)
 ```cmd
 sel par $
 ```
@@ -73,7 +73,7 @@ assign letter x
 ```
 
 #### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 23)
+> Replace $ with the partition number of ESP (should be 22)
 ```cmd
 sel par $
 ```
@@ -99,7 +99,7 @@ adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cac
 ```
 
 #### Making ESP bootable
-> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 23
+> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 22
 ```cmd
 set $ esp on
 ```
