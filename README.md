@@ -1,6 +1,3 @@
-> [!Important]
-> Touch currently does not work due to missing devcfg
-
 <img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
 # Running Windows on the Xiaomi Mi 8
