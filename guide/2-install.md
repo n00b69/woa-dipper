@@ -5,7 +5,6 @@
 ## Installing Windows
 
 ### Prerequisites
-
 - [Windows on ARM image](https://worproject.com/esd)
   
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-uefi.img)
@@ -190,31 +189,8 @@ adb reboot bootloader
 fastboot flash path\to\devcgf-dipper.img
 ```
 
-#### Reboot your recovery
-```cmd
-fastboot reboot recovery
-```
-
-#### Push the UEFI to your phone
-Download the UEFI and drag and drop it to your phone
-
-#### Back up your Android boot image
-Use the TWRP backup feature to backup your Android boot image. Name this backup `Android`
-
-#### Flash the UEFI
-Use the TWRP install feature to flash the UEFI image to your boot partition. Select `install image`, then locate the image.
-
-#### Back up your Windows boot image
-Use the TWRP backup feature to backup your Windows boot image. Name this backup `Windows`
-
-#### Boot into Windows
-After having flashed the UEFI image, reboot your phone.
-
-### Setting up Windows
-> Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
-
-> [!Note]
-> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
+### Reboot to Android
+> To set up dualboot
 
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 
