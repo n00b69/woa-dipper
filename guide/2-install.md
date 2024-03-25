@@ -7,9 +7,7 @@
 ### Prerequisites
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [UEFI image](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-uefi.img)
-  
-- [Drivers](https://github.com/n00b69/woa-dipper/releases/download/Drivers/dipper-drivers.zip)
+- [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
   
 - [Msc script](https://github.com/n00b69/woa-dipper/releases/download/Files/msc.sh)
 
