@@ -20,7 +20,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 
 ## Miscellaneous
-- [Dualboot setup](guide/dualboot.md) W.I.P missing some files
+- [Dualboot setup](guide/dualboot.md)
 
 - [Additional materials](guide/materials.md)
 
