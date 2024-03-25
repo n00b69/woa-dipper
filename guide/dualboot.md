@@ -11,7 +11,7 @@
 
 - [WOA Helper app](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/woahelper.apk)
 
-- [Switch To Android package]() FILE NEEDED
+- [Switch To Android package](https://github.com/n00b69/woa-dipper/releases/download/Files/polaris-sta.zip)
 
 ## Dualboot guide
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
