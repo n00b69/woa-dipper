@@ -5,7 +5,7 @@
 ## Uninstallation
 
 ### Why is this needed?
-If you want to uninstall windows this is used instead of deleting partitions manually to avoid human error + writing a whole dedicated guide to just uninstalling.
+If you want to uninstall Windows, this is used instead of deleting partitions manually to avoid human error + writing a whole dedicated guide to just uninstalling.
 
 If you want to relock your bootloader you'll need your partition table to be stock.
 
@@ -13,11 +13,7 @@ If you want to relock your bootloader you'll need your partition table to be sto
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [gpt_both0.bin]() FILE NEEDED
-
-### Uninstall instructions
-> [!Important]
-> This guide will likely not work, it needs to be updated
+- [gpt_both0.bin](https://github.com/n00b69/woa-dipper/releases/download/Files/gpt_both0.bin)
 
 #### Boot into fastboot mode
 > Hold the volume down + power button while the phone is turned off, or run the following command while it is booted
