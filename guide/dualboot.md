@@ -9,7 +9,7 @@
 
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-- [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/blob/main/woahelper.apk)
+- [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
 - [Switch To Android package](https://github.com/n00b69/woa-dipper/releases/download/Files/dipper-sta.zip)
 
