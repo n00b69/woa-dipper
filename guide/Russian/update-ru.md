@@ -1,20 +1,20 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Winows на Xiaomi Mi 8
 
 ## Обновление драйверов 
 
 ### Требования
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Драйвера](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
   
-- [Образ UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Запуск UEFI
-> Замените **<путь\к\polaris-uefi.img>** путём к образу UEFI 
+> Замените **<путь\к\dipper-uefi.img>** путём к образу UEFI 
 ```cmd
-fastboot boot <путь\к\polaris-uefi.img>
+fastboot boot <путь\к\dipper-uefi.img>
 ```
 
 #### Включение режима mass storage 
@@ -52,7 +52,7 @@ lis par
 sel par $
 ```
 
-#### Привязать букву к WINPOLARIS
+#### Привязать букву к WINDIPPER
 ```cmd
 assign letter X
 ```
