@@ -162,7 +162,7 @@ adb reboot bootloader
 ```
 
 ### Fixing touch
-> Reboot to faatboot, then replace "path\to" with the actual path to the image
+> Replace "path\to" with the actual path to the image
 ```cmd
 fastboot flash devcfg_ab path\to\devcgf-dipper.img
 ```
