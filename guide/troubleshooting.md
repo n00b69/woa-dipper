@@ -6,14 +6,20 @@
 > Below you will find a list of common problems and their solutions
 
 ## Cannot mount Windows in Android
-> This is caused when you shut down Windows instead of restarting it.
+If mounting Windows produces an empty folder, you either don't have Windows installed, or your rom does not have mount support.
+
+##### Finished!
+
+## Cannot write to Windows in Android
+> This is caused by shutting down Windows instead of restarting it.
 - To solve this, boot to Windows and then press "restart", then as the screen shuts off boot to TWRP and from there load up Android.
+- Or, disable hibernation in Windows. 
 > Alternatively, if you have already set up the Switch to Android app, simply use this to switch to Android.
 
 ##### Finished!
 
 ## USB does not work
-Enable USB host mode using the optional [post install guide](materials.md).
+Enable USB host mode using the optional [post install guide](postinstall.md).
 
 ##### Finished!
 
