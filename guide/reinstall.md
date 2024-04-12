@@ -69,6 +69,39 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 
 > Enter the drive letter of **WINDIPPER**, which should be X, then press enter
 
+### Unassign disk letters
+> So that they don't stay there after disconnecting the device
+```cmd
+diskpart
+```
+
+#### Select the Windows volume of the phone
+> Use `list volume` to find it, replace "$" with the actual number of **WINDIPPER**
+```diskpart
+select volume $
+```
+
+#### Unassign the letter X
+```diskpart
+remove letter x
+```
+
+#### Select the ESP volume of the phone
+> Use `list volume` to find it, replace "$" with the actual number of **ESPDIPPER**
+```diskpart
+select volume $
+```
+
+#### Unassign the letter Y
+```diskpart
+remove letter y
+```
+
+#### Exit diskpart
+```diskpart
+exit
+```
+
 ### Reboot to fastboot
 ```cmd
 adb reboot bootloader
