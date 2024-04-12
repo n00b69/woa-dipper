@@ -7,11 +7,11 @@
 ### Требования
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [Образ UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 - [Приложение WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
-- [Switch To Android пакет](https://github.com/n00b69/woa-polaris/releases/download/Files/polaris-sta.zip)
+- [Switch To Android пакет](https://github.com/n00b69/woa-dipper/releases/download/Files/polaris-sta.zip)
 
 ## Руководство по двойной загрузке
 В этом руководстве предполагается, что у вас есть root-права, если это не так, пожалуйста, сначала следуйте [этому руководству](root-ru.md).
