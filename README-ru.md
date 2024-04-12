@@ -1,7 +1,7 @@
-<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Запуск Winows на Xiaomi Pocophone F1
-[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/WinOnF1)
+# Запуск Winows на Xiaomi Mi 8
+[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/woadipper)
 
 ## Выберите ваш язык 
 [`English`](/README.md) | **`Pусский`** | ~[`Polski`](README-pl.md)~
