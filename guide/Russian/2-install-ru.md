@@ -7,16 +7,16 @@
 ### Требования
 - [ARM образ Windows](https://worproject.com/esd)
   
-- [Драйвера](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Devcfg исправления touch](https://github.com/n00b69/woa-polaris/releases/download/Files/devcfg-polaris.img)
+- [Devcfg исправления touch](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-polaris.img)
   
-- [образ UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Загрузка в UEFI
-> Замените **<путь\к\polaris-uefi.img>** с актуальным путём к образу UEFI
+> Замените **<путь\к\dipper-uefi.img>** с актуальным путём к образу UEFI
 ```cmd
-fastboot boot <путь\к\polaris-uefi.img>
+fastboot boot <путь\к\dipper-uefi.img>
 ```
 
 #### Включение режима mass storage
@@ -58,7 +58,7 @@ sel par $
 
 #### Отформатировать раздел Windows
 ```cmd
-format quick fs=ntfs label="WINPOLARIS"
+format quick fs=ntfs label="WINDIPPER"
 ```
 
 #### Добавить букву к разделу Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Отформатировать раздел ESP
 ```cmd
-format quick fs=fat32 label="ESPPOLARIS"
+format quick fs=fat32 label="ESPDIPPER"
 ```
 
 #### Добавьте букву к ESP
@@ -128,7 +128,7 @@ diskpart
 ```
 
 #### Выбрать раздел Windows телефона
-> Используйте `list volume` чтобы найти его, замените `$` номером **WINPOLARIS**
+> Используйте `list volume` чтобы найти его, замените `$` номером **WINDIPPER**
 ```diskpart
 select volume $
 ```
@@ -139,7 +139,7 @@ remove letter x
 ```
 
 #### Выбрать раздел ESP телефна
-> Используйте `list volume` чтобы найти его, замените `$` номером **ESPPOLARIS**
+> Используйте `list volume` чтобы найти его, замените `$` номером **ESPDIPPER**
 ```diskpart
 select volume $
 ```
@@ -157,7 +157,7 @@ exit
 ### Исправить touch
 > Перезагрузитесь в fastboot, затем замените **path\to** путём к образу
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-polaris.img
+fastboot flash devcfg_ab path\to\devcgf-dipper.img
 ```
 
 ### Перезагрузка в Android
