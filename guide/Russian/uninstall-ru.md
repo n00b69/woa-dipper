@@ -12,7 +12,7 @@ If you want to relock your bootloader you'll need your partition table to be sto
 ### Требования
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [gpt_both0.bin](https://github.com/n00b69/woa-polaris/releases/download/Files/gpt_both0.bin)
+- [gpt_both0.bin](https://github.com/n00b69/woa-dipper/releases/download/Files/gpt_both0.bin)
 
 ### Загрузитесь в fastboot 
 > Удерживайте нажатой кнопку уменьшения громкости + включения, пока телефон выключен, или выполните следующую команду когда он загружен 
@@ -35,3 +35,20 @@ fastboot -w
 > Если форматирование userdata завершится неудачно, перезагрузтесь в recovery и сделайте wipe data там вместо этого
 
 ## Готово!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
