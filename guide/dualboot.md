@@ -14,7 +14,7 @@
 - [Switch To Android package](https://github.com/n00b69/woa-dipper/releases/download/Files/dipper-sta.zip)
 
 ## Dualboot guide
-This guide assumes you are rooted, if you aren't, please follow [this guide](root-ru.md) first.
+This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
 ### Setup - Android
 - Download and install the WOA Helper app, then open it and grant it root access.
