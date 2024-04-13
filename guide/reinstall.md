@@ -9,8 +9,6 @@
 
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Devcfg (touch fix)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
-
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Boot to the UEFI
@@ -79,14 +77,6 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
 ```cmd
 dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
-```
-
-### Fixing touch
-> Hold the **volume up** + **power** button until it boots to fastboot
-> 
-> Replace "path\to" with the actual path to the image
-```cmd
-fastboot flash devcfg_ab path\to\devcgf-dipper.img
 ```
 
 ### Boot into Windows
