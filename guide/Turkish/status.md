@@ -6,7 +6,6 @@
 Bu proje aktif olarak sürdürülmemektedir, güncellemeler sonunda ortaya çıkabilir, ancak bunları sık sık beklemeyin
 
 #### Özellikler
-
 - [ ] Ses
 - [X] Batarya göstergesi
 - [x] Bluetooth
@@ -31,7 +30,6 @@ Bu proje aktif olarak sürdürülmemektedir, güncellemeler sonunda ortaya çık
 - [ ] Yakınlık
 
 #### Güvenlik
-
 - [ ] Güvenlik İşlemcisi ```Çalıştırmak imkansız, Xiaomi aygıt yazılımını bozdu``
 - [ ] TPM (Yazılım Destekli)
 
