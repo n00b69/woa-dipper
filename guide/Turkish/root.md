@@ -11,16 +11,17 @@
 
 - [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
 
-##### TWRP'ye gir
+### TWRP'ye gir
 > Eğer recovery'niz stock olarak değiştirildiyse, fastboot ile tekrar flashlayın:
 ``cmd
 fastboot flash recovery path\to\twrp.img reboot recovery```
-##### Önyükleme görüntünüzü yedekleme
+
+#### Önyükleme görüntünüzü yedekleme
 > Bazen Magisk'in yanıp sönmesi bir bootloop'a neden olabilir. Bunu düzeltmek için bir boot.img yedeğini geri yüklemeniz gerekir.
 
 Önyükleme bölümünün yedeğini almak için TWRP yedekleme özelliğini kullanın.
 
-##### Magisk Yükleme
+### Magisk Yükleme
 - Magisk.apk dosyasını flash'layın (magisk.zip olarak yeniden adlandırmanız gerekebilir) ve telefonunuzu yeniden başlatın. 
 - Önyüklendikten sonra Magisk uygulamasını bulun ve açın.
 - Sağlanan tüm talimatları izleyin. Size birkaç yöntem sunulursa doğrudan yükleme yöntemini seçin.
