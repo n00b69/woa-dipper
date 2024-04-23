@@ -14,23 +14,23 @@ Bu proje erken bir aşamadadır, buradaki tüm dosyalar diğer kullanıcılar ta
 **TELEFONUNUZU VEYA BÖLÜM TABLOSUNU MODIFIYE ETME KONUSUNDA RAHAT DEĞILSENIZ VEYA CIHAZINIZI BRICK ETME PARANOYANIZ VARSA HEMEN TIKLAYIN!!! UYARILDINIZ, CİHAZINIZI BRICK EDERSENİZ KENDİ BAŞINIZA KALIRSINIZ!!! TEKRAR! UYARILDINIZ!!!**
 
 ## Buradan başla
-- [Projenin durumu](guide/status.md)
+- [Projenin durumu](status.md)
 
-- ~~[Kurulum talimatları](guide/1-partition.md)~~
+- ~~[Kurulum talimatları](1-partition.md)~~
 
-- [Sorunlar](guide/troubleshooting.md)
+- [Sorunlar](troubleshooting.md)
 
 
 ## Fazlası...
-- ~~[Çift işletim sistemi kurulumu](guide/dualboot.md)~~
+- ~~[Çift işletim sistemi kurulumu](dualboot.md)~~
 
-- ~~[İlave materyaller](guide/materials.md)~~
+- ~~[İlave materyaller](materials.md)~~
 
-- ~~[Sürücüleri güncelle](guide/update.md)~~
+- ~~[Sürücüleri güncelle](update.md)~~
 
-- ~~[Tekrar yükleme talimatları](guide/reinstall.md)~~
+- ~~[Tekrar yükleme talimatları](reinstall.md)~~
 
-- [Silme talimatları](guide/uninstall.md)
+- [Silme talimatları](uninstall.md)
 
 
 ## Katkıda bulunanlar
