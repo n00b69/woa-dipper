@@ -14,10 +14,10 @@
 ### TWRP'ye gir
 > Eğer recovery'niz stock olarak değiştirildiyse, fastboot ile tekrar flashlayın:
 ``cmd
-fastboot flash recovery path\to\twrp.img reboot recovery```
+fastboot flash recovery C:\Users\kullaniciadin\Downloads\twrp.img reboot recovery```
 
 #### Önyükleme görüntünüzü yedekleme
-> Bazen Magisk'in yanıp sönmesi bir bootloop'a neden olabilir. Bunu düzeltmek için bir boot.img yedeğini geri yüklemeniz gerekir.
+> Bazen Magisk'in flashlanması bir bootloop'a neden olabilir. Bunu düzeltmek için bir boot.img yedeğini geri yüklemeniz gerekir.
 
 Önyükleme bölümünün yedeğini almak için TWRP yedekleme özelliğini kullanın.
 
