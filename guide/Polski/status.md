@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Mi 8
 
 ## Status Projektu
 Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić się, ale nie należy się ich spodziewać często
