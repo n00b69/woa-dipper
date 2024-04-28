@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Mi 8
 
 ## Dodatkowe materiały
 > Poniżej znajdziesz listę usprawnień i materiałów dla systemu Windows na urządzeniu ARM
