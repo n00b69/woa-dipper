@@ -1,20 +1,20 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Mi 8
 
 ## Ponowna instalacja Windows
 
 ### Wymagania
 - [Windows dla ARM](https://worproject.com/esd)
 
-- [Sterowniki](https://github.com/n00b69/woa-equuleus/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
   
-- [Obraz UEFI](https://github.com/n00b69/woa-equuleus/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp **<path\to\equuleus-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+> Zastąp **<path\to\dipper-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot <path\to\equuleus-uefi.img>
+fastboot boot <path\to\dipper-uefi.img>
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -54,7 +54,7 @@ sel par $
 
 #### Formatowanie dysku z systemem Windows
 ```cmd
-format quick fs=ntfs label="WIN8PRO"
+format quick fs=ntfs label="WINDIPPER"
 ```
 
 #### Dodaj literę do systemu Windows
@@ -79,7 +79,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Instalowanie sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WIN8PRO** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINDIPPER** (która powinna być X), a następnie naciśnij enter.
 
 ### Uruchom do Androida
 Uruchom ponownie telefon. Jeśli zamiast systemu Windows wylądujesz w systemie Android, ponownie wykonaj flashowanie UEFI za pomocą WOA Helper.
