@@ -1,29 +1,29 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Mi 8
 
 ## Aktualizowanie sterowników
 
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Sterowniki](https://github.com/n00b69/woa-equuleus/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Skrypt Msc](https://github.com/n00b69/woa-equuleus/releases/download/Files/msc.sh)
+- [Skrypt Msc](https://github.com/n00b69/woa-dipper/releases/download/Files/msc.sh)
   
-- [TWRP](https://github.com/n00b69/woa-equuleus/releases/download/Files/twrp.img) (powinno już być zainstalowane)
+- [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-#### Uruchom do TWRP
-> Jeśli Xiaomi zastąpiło Twoje recovery z powrotem do stanu magazynowego, sflashuj je ponownie w trybie fastboot za pomocą:
+### Uruchom do UEFI
+> Zastąp **<path\to\dipper-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot flash recovery path\to\twrp.img
+fastboot boot <path\to\dipper-uefi.img>
 ```
 
-#### Uruchamianie skryptu msc
-> Umieść msc.sh w folderze platform-tools, a następnie uruchom:
-```cmd
-adb push msc.sh / && adb shell sh msc.sh
-```
+#### Włączanie trybu pamięci masowej
+> Po uruchomieniu systemu UEFI użyj przycisków głośności do poruszania się po menu i przycisku zasilania, aby potwierdzić
+- Wybierz **UEFI Boot Menu**.
+- Wybierz **USB Attached SCSI (UAS) Storage**.
+- Naciśnij przycisk dwa razy aby potwierdzić.
 
 ### Diskpart
 ```cmd
@@ -67,7 +67,7 @@ exit
 ### Instalowanie sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WIN8PRO** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINDIPPER** (która powinna być X), a następnie naciśnij enter.
 
 ### Usuń przypisanie litery dysku
 > Żeby nie pozostał tam po odłączeniu urządzenia
@@ -76,7 +76,7 @@ część dysku
 ```
 
 #### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WIN8PRO**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINDIPPER**
 ```część dysku
 wybierz głośność $
 ```
