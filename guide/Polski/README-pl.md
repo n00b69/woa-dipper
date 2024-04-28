@@ -1,7 +1,7 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
-[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/woaequuleus)
+# Windows na Xiaomi Mi 8
+[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/woadipper)
 
 ## Wybierz swój język
 [`English`](/README.md) | [`Pусский`](/guide/Russian/README-ru.md) | **Polski**
@@ -56,9 +56,12 @@ Ten projekt jest na wczesnym etapie, wszystkie pliki tutaj zostały przesłane p
 [<img alt="nedokaka" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/104865210?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/nedokaka)
 [<img alt="RIllEX1"
 src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/142384494?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/RIllEX1)
-[<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69) 
+[<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
+[<img alt="ReiiAyanamii" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/100034859?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/ReiiAyanamii)
 [<img alt="TrustedFloppa" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/85476585?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TrustedFloppa)
 [<img alt="Misha803" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/118528504?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Misha803)
+[<img alt="wdxvvy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/130128045?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/wdxvvy)
+
 
 
 
