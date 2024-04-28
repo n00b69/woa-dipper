@@ -1,22 +1,22 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Mi 8
 
 ## Instalacja Windowsa
 
 ### Wymagania
 - [Windows dla ARM](https://worproject.com/esd)
   
-- [Sterowniki](https://github.com/n00b69/woa-equuleus/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-equuleus/releases/download/Files/devcfg-polaris.img)
+- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-polaris.img)
   
-- [obraz UEFI](https://github.com/n00b69/woa-equuleus/releases/tag/UEFI)
+- [obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp **<path\to\equuleus-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+> Zastąp **<path\to\dipper-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot <path\to\equuleus-uefi.img>
+fastboot boot <path\to\dipper-uefi.img>
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -58,7 +58,7 @@ sel par $
 
 #### Formatowanie dysku z systemem Windows
 ```cmd
-format quick fs=ntfs label="WIN8PRO"
+format quick fs=ntfs label="WINDIPPER"
 ```
 
 #### Dodaj literę do systemu Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Formatowanie ESP
 ```cmd
-format quick fs=fat32 label="ESP8PRO"
+format quick fs=fat32 label="ESPDIPPER"
 ```
 
 #### Dodaj literę do ESP
@@ -99,7 +99,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Instalowanie Sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WIN8PRO** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINDIPPER** (która powinna być X), a następnie naciśnij enter.
 
 #### Utwórz pliki bootloadera systemu Windows
 ```cmd
@@ -128,7 +128,7 @@ diskpart
 ```
 
 #### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WIN8PRO**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINDIPPER**
 ```część dysku
 sel vol $
 ```
@@ -139,7 +139,7 @@ remove letter x
 ```
 
 #### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESP8PRO**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPDIPPER**
 ```część dysku
 sel vol $
 ```
@@ -157,7 +157,7 @@ exit
 ### Naprawianie dotyku
 > Uruchom ponownie telefon w trybie fastboot, a następnie zamień **path\to** rzeczywistą ścieżką do obrazu devcfg (który pobrałeś wczesniej)
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-equuleus.img
+fastboot flash devcfg_ab path\to\devcgf-dipper.img
 ```
 
 ### Uruchom ponownie do Androida
