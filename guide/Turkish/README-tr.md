@@ -4,7 +4,7 @@
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/woadipper)
 
 ## Dilini seç
-[`English`](README.md) | [`Pусский`](/guide/Russian/README-ru.md) | ~~[`Polski`](guide/Polski/README-pl.md)~~ | **Türkçe**
+[`English`](/README.md) | [`Pусский`](/guide/Russian/README-ru.md) | [`Polski`](/guide/Polski/README-pl.md) | **Türkçe**
 
 ## ⚠️ Uyarı
 Brick cihazlardan, eksik kurtarma bölümlerinden, ölü xiaomi factoryline ~~çalışanlarından~~ kovboylardan, ölü pmic'lerden, ölü ram'lerden, ölü sim kartlardan, ölü ekran ics'lerinden, ölü cpu'lardan, herhangi bir xiaomi saçmalığından, patlayan pillerden, ölü kedi veya köpeklerden, nükleer savaşlardan veya alarm için android'e geri dönmeyi unuttuğunuz için işten atılmanızdan sorumlu değiliz.
