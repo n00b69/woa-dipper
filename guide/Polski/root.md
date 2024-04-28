@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Mi 8
 
 ## Przewodnik po rootowaniu
 
@@ -9,7 +9,7 @@
 
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-equuleus/releases/download/Files/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
 
 ### Uruchom TWRP
 > Jeśli Twoje recovery zostało przywrócone do stanu fabrycznego, wykonaj flashowanie ponownie w trybie fastboot za pomocą:
