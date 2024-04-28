@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Запуск Winows на Xiaomi Mi 8
+# Запуск Windows на Xiaomi Mi 8
 
 ## Установка Windows
 
