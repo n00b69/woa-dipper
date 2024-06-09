@@ -156,9 +156,7 @@ exit
 ```
 
 ### Reboot to fastboot
-```cmd
-adb reboot bootloader
-```
+> Hold **volume** down + **power** to force reboot your phone into fastboot mode
 
 ### Fixing touch
 > Replace **path\to** with the actual path to the image
