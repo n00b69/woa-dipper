@@ -156,7 +156,7 @@ exit
 ```
 
 ### Reboot to fastboot
-> Hold **volume** down + **power** to force reboot your phone into fastboot mode
+> Hold **volume down** + **power** to force reboot your phone into fastboot mode
 
 ### Fixing touch
 > Replace **path\to** with the actual path to the image
