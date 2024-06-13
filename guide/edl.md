@@ -1,13 +1,13 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on dipper">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the Xiaomi Mi 8
 
 ## Restoring your device with EDL
 
 ### Prerequisites
-- [Stock fastboot rom](https://xiaomifirmwareupdater.com/miui/polaris/)
+- [Stock fastboot rom](https://xmfirmwareupdater.com//miui/dipper/)
 
-- [EDL tools](https://github.com/n00b69/woa-polaris/releases/download/Files/Xiaomi845freeEDL.zip)
+- [EDL tools](https://github.com/n00b69/woa-dipper/releases/download/Files/Xiaomi845freeEDL.zip)
 
 ### Extracting the stock rom
 > Download the stock fastboot rom for your device (which should be in .tgz format), then extract the contents of the .tar file that is inside.
