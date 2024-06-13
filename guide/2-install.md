@@ -14,7 +14,7 @@
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Boot to the UEFI
-> Replace **path\to\dipper-uefi.img** with the actual path of the UEFI image
+> Replace `path\to\dipper-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\dipper-uefi.img
 ```
