@@ -14,7 +14,7 @@
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
-> Замените **путь\к\dipper-uefi.img** актуальным путём к образу UEFI
+> Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
 ```cmd
 fastboot boot путь\к\dipper-uefi.img
 ```
@@ -88,6 +88,9 @@ exit
 ```
 
 ### Установка Windows
+> [!Warning]
+> НЕ ИСПОЛЬЗУЙТЕ 24H2!!!
+
 > Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
 ```cmd
 dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
