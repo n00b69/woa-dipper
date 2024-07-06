@@ -9,7 +9,7 @@
   
 - [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-polaris.img)
+- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
   
 - [obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
