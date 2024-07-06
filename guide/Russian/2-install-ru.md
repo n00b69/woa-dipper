@@ -160,9 +160,9 @@ exit
 > Удерживайте кнопку **уменьшение громкости** + **питание**, чтобы перезагрузить телефон в режим fastboot
 
 ### Исправить touch
-> Перезагрузитесь в fastboot, затем замените `путь\к\devcgf-dipper.img` путём к образу
+> Перезагрузитесь в fastboot, затем замените `путь\к\devcfg-dipper.img` путём к образу
 ```cmd
-fastboot flash devcfg_ab путь\к\devcgf-dipper.img
+fastboot flash devcfg_ab путь\к\devcfg-dipper.img
 ```
 
 ### Перезагрузка в Android
