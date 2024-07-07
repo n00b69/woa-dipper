@@ -88,7 +88,7 @@ Uruchom ponownie telefon. Jeśli zamiast systemu Windows wylądujesz w systemie 
 > Twoje urządzenie skonfiguruje teraz system Windows. To zajmie trochę czasu. W końcu uruchomi się ponownie, a następnie powinna rozpocząć się konfiguracja wstępna (oobe).
 
 > [!Note]
-> Aby pominąć logowanie do konta Microsoft, wpisz „g” jako adres e-mail i hasło. System Windows umożliwi wówczas utworzenie konta lokalnego
+> Aby pominąć logowanie do konta Microsoft, wpisz "g" jako adres e-mail i hasło. System Windows umożliwi wówczas utworzenie konta lokalnego
 
 ## Skończone!
 
