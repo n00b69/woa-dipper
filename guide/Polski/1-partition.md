@@ -22,6 +22,16 @@
 >
 > MOŻESZ ZNISZCZYĆ SWOJE URZĄDZENIE ZA POMOCĄ PONIŻSZYCH POLECEŃ, JEŚLI ZROBISZ JE ŹLE!!!
 
+### Otwieranie CMD jako administrator
+> Pobierz **platform-tools** i wypakuj gdzieś folder, a następnie otwórz CMD jako **administrator**.
+>
+> Zaleca się pozostawienie tego okna otwartego i korzystanie z niego przez cały przewodnik.
+> 
+> Zastąp `path\to\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
+```cmd
+cd path\to\platform-tools
+```
+
 #### Zflashuj TWRP
 > Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie szybkiego uruchamiania) uruchom
 ```cmd
