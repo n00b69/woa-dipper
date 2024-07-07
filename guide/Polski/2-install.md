@@ -11,7 +11,7 @@
 
 - [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
   
-- [obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Uruchom do UEFI
 > Zastąp `path\to\dipper-uefi.img` rzeczywistą ścieżką obrazu UEFI
