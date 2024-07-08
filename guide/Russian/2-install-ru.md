@@ -165,10 +165,13 @@ exit
 fastboot flash devcfg_ab путь\к\devcfg-dipper.img
 ```
 
-### Перезагрузка в Android
-> Чтобы настроить двойную загрузку
+#### Загрузитесь в UEFI
+> Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
 ```cmd
-fastboot reboot
+fastboot boot путь\к\dipper-uefi.img
 ```
+
+### Reboot to Android
+Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
 ## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)
