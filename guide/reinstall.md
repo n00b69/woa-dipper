@@ -85,8 +85,8 @@ Reboot your phone. If you end up in Android instead of Windows, flash the UEFI a
 #### Setting up Windows
 > Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
-> [!Note]
-> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
+> [!Tip]
+> If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
 
 ## Finished!
 
