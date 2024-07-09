@@ -87,8 +87,8 @@ Uruchom ponownie telefon. Jeśli zamiast systemu Windows wylądujesz w systemie 
 #### Konfiguracja Windowsa
 > Twoje urządzenie skonfiguruje teraz system Windows. To zajmie trochę czasu. W końcu uruchomi się ponownie, a następnie powinna rozpocząć się konfiguracja wstępna (oobe).
 
-> [!Note]
-> Aby pominąć logowanie do konta Microsoft, wpisz "g" jako adres e-mail i hasło. System Windows umożliwi wówczas utworzenie konta lokalnego
+> [!Tip]
+> If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
 
 ## Skończone!
 
