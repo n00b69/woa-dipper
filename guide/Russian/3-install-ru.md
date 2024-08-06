@@ -91,15 +91,18 @@ exit
 > [!Warning]
 > НЕ ИСПОЛЬЗУЙТЕ 24H2!!!
 
-> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
+> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim или 22631.2861.XXXXXXX.esd)
 ```cmd
 dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом **Windows 11 Pro** в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+
+### Копирование вашего boot.img в Windows
+- Перетащите **magisk_patched.img** на диск **WINPOLARIS** в проводнике Windows, затем переименуйте его в **boot.img**.
 
 ### Установка драйверов
-> Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
+- Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` (Если появляется ошибка, запустите `OfflineUpdaterFix.cmd`)
 
 > Введите букву диска **WINDIPPER** (должна быть **X**) затем нажмите Enter
   
@@ -174,4 +177,4 @@ fastboot boot путь\к\dipper-uefi.img
 ### Reboot to Android
 Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
-## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)
+## [Последний шаг: Настройка двойной загрузки](4-dualboot-ru.md)
