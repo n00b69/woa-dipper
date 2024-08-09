@@ -13,10 +13,10 @@
 
 - [Parted](https://github.com/n00b69/woa-dipper/releases/download/Files/parted)
 
-### Notes
+### Uwagi
 > [!Warning]  
 > 
-> NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [czacie telegramowym](https://t.me/woadipper).
+> NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [Telegramie](https://t.me/woadipper).
 > 
 > Nie uruchamiaj wszystkich poleceń na raz, wykonuj je po kolei!
 >
@@ -32,13 +32,13 @@
 cd ścieżka\do\platform-tools
 ```
 
-#### Zflashuj TWRP
+#### Instalacja TWRP
 > Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie szybkiego uruchamiania) uruchom
 ```cmd
 fastboot flash recovery ścieżka\do\twrp.img reboot recovery
 ```
 
-### Tworzenie kopii zapasowych ważnych plików
+### Tworzenie kopii zapasowej ważnych plików
 > Spowoduje to utworzenie kopii zapasowej plików **fsc**, **fsg**, **modemst1** i **modemst2** w bieżącej ścieżce, w której otwarto CMD (na przykład **C:\platform-tools**). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
 > 
 > Trzymaj tę kopię zapasową w bezpiecznym miejscu. Jeśli oprogramowanie Twojego urządzenia kiedykolwiek ulegnie uszkodzeniu, możesz potrzebować tej kopii, gdyż w przeciwnym wypadku telefon może już nigdy nie być w stanie wykonywać połączeń.
