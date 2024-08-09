@@ -5,7 +5,7 @@
 ## Instalacja Windowsa
 
 ### Wymagania
-- [Windows dla ARM](https://worproject.com/esd)
+- [Windows na ARM](https://worproject.com/esd)
   
 - [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
@@ -27,7 +27,7 @@ fastboot boot ścieżka\do\dipper-uefi.img
 
 ### Diskpart
 > [!WARNING]
-> NIE USUWAJ ŻADNYCH PARTYCJI W DISKPART!!!! TO USUNIE CAŁĄ TWOJĄ UFS!!!! OZNACZA TO, ŻE TWOJE URZĄDZENIE ZOSTANIE TRWAŁE USZKODZONE BEZ ROZWIĄZANIA! (z wyjątkiem zabrania urządzenia do Xiaomi lub flashowania go za pomocą EDL, co prawdopodobnie będzie kosztować)
+> NIE USUWAJ ŻADNYCH PARTYCJI W DISKPART!!!! TO USUNIE CAŁĄ ZAWARTOŚĆ PAMIĘCI!!!! OZNACZA TO, ŻE TWOJE URZĄDZENIE ZOSTANIE TRWALE USZKODZONE BEZ ROZWIĄZANIA! (z wyjątkiem wysłania go do Xiaomi lub flashowania go za pomocą EDL)
 ```cmd
 diskpart
 ```
@@ -61,12 +61,12 @@ sel par $
 format quick fs=ntfs label="WINDIPPER"
 ```
 
-#### Dodaj literę do systemu Windows
+#### Dodanie litery do systemu Windows
 ```cmd
 assign letter x
 ```
 
-#### Wybieranie Partycji ESP
+#### Wybieranie partycji ESP
 > Zamień $ na numer partycji ESP (powinno być 22)
 ```cmd
 sel par $
@@ -77,12 +77,12 @@ sel par $
 format quick fs=fat32 label="ESPDIPPER"
 ```
 
-#### Dodaj literę do ESP
+#### Dodanie litery do ESP
 ```cmd
 assign letter y
 ```
 
-#### Wyjdź z Diskpart
+#### Wyjście z Diskpart
 ```cmd
 exit
 ```
@@ -104,14 +104,14 @@ dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 ### Instalowanie sterowników
 - Wypakuj archiwum ze sterownikami, a następnie otwórz plik `OfflineUpdater.cmd` (jeśli pojawi się błąd, otwórz `OfflineUpdaterFix.cmd`)
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINDIPPER** (która powinna być **X**), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINDIPPER** (którą powinna być **X**), a następnie naciśnij enter.
 
-#### Utwórz pliki bootloadera systemu Windows
+#### Tworzenie plików bootloadera systemu Windows
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
 
-#### Włącz tryb testowy
+#### Włączanie trybu testowego
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
 ```
@@ -126,38 +126,14 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Usuń przypisanie litery dysku
-> Żeby nie pozostał tam po odłączeniu urządzenia
+#### Remove the drive letter for ESP
+> If this does not work, ignore it and skip to the next command. This phantom drive will disappear the next time you reboot your PC.
 ```cmd
-diskpart
+mountvol y: /d
 ```
 
-#### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINDIPPER**
-```część dysku
-sel vol $
-```
-
-#### Usuń przypisanie litery X
-```część dysku
-remove letter x
-```
-
-#### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPDIPPER**
-```część dysku
-sel vol $
-```
-
-#### Usuń przypisanie litery Y
-```część dysku
-remove letter y
-```
-
-#### Wyjdź z dysku
-```część dysku
-exit
-```
+### Uruchamianie ponownie w trybie fastboot
+> Przytrzymaj **zmniejszanie głośności** + **zasilanie**, aby wymusić ponowne uruchomienie telefonu w trybie fastboot
 
 ### Naprawianie dotyku
 > Zastąp `ścieżka\do\devcfg-dipper.img` rzeczywistą ścieżką obrazu
