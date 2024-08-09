@@ -38,19 +38,29 @@ cd path\to\platform-tools
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-#### Tworzenie kopii zapasowych ważnych plików
+### Tworzenie kopii zapasowych ważnych plików
 > Spowoduje to utworzenie kopii zapasowej plików **fsc**, **fsg**, **modemst1** i **modemst2** w bieżącej ścieżce, w której otwarto CMD (na przykład **C:\platform-tools**). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
->
+> 
+> Trzymaj tę kopię zapasową w bezpiecznym miejscu. Jeśli oprogramowanie Twojego urządzenia kiedykolwiek ulegnie uszkodzeniu, możesz potrzebować tej kopii, gdyż w przeciwnym wypadku telefon może już nigdy nie być w stanie wykonywać połączeń.
+> 
 > Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
 ```cmd
 cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+```
+
+#### Tworzenie kopii zapasowych obrazu rozruchu
+> Spowoduje to utworzenie kopii zapasowej obecnego obrazu rozruchu w bieżącej ścieżce
+```cmd
+adb pull /dev/block/by-name/boot boot.img
 ```
 
 ### Przewodnik dotyczący partycjonowania
 > Twój Xiaomi Mi 8 może mieć różne rozmiary pamięci. Ten przewodnik używa wartości modelu 128GB jako przykładu. W razie potrzeby przewodnik wspomni, czy można lub należy użyć innych wartości.
 
 #### Odmontuj dane
-- Przejdź do "Montuj" w TWRP i odmontuj dane, jeśli są zamontowane
+```cmd
+adb shell umount /dev/block/by-name/userdata
+```
 
 #### Przygotowanie do partycjonowania
 > Pobierz plik parted i przenieś go do folderu platform-tools, a następnie uruchom
@@ -112,8 +122,7 @@ quit
 #### Sprawdź, czy Android nadal się uruchamia
 - Po prostu uruchom ponownie telefon i sprawdź, czy Android nadal działa
 
-
-## [Następny Krok](2-install.md)
+## [Następny krok: Rootowanie telefonu](2-root.md)
 
 
 
