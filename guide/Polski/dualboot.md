@@ -2,7 +2,7 @@
 
 # Windows na Xiaomi Mi 8
 
-## Dualboot
+## Konfiguracja dualboot
 
 ### Wymagania
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
