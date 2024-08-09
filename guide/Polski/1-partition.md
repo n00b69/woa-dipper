@@ -27,15 +27,15 @@
 >
 > Zaleca się pozostawienie tego okna otwartego i korzystanie z niego przez cały przewodnik.
 > 
-> Zastąp `path\to\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
+> Zastąp `ścieżka\do\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
 ```cmd
-cd path\to\platform-tools
+cd ścieżka\do\platform-tools
 ```
 
 #### Zflashuj TWRP
 > Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie szybkiego uruchamiania) uruchom
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery ścieżka\do\twrp.img reboot recovery
 ```
 
 ### Tworzenie kopii zapasowych ważnych plików
