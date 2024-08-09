@@ -141,7 +141,7 @@ mountvol y: /d
 fastboot flash devcfg_ab ścieżka\do\devcfg-dipper.img
 ```
 
-#### Uruchom do UEFI
+#### Uruchamianie do UEFI
 > Zastąp `ścieżka\do\dipper-uefi.img` rzeczywistą ścieżką obrazu UEFI
 ```cmd
 fastboot boot ścieżka\do\dipper-uefi.img
