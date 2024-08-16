@@ -115,7 +115,17 @@ set $ esp on
 quit
 ```
 
-#### Formatowanie danych
+### Formatowanie dysku z systemem Windows
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINDIPPER
+``` 
+
+### Formatowanie dysku z systemem ESP
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
+```
+
+### Formatowanie danych
 - Sformatuj wszystkie dane w TWRP, w przeciwnym razie Android nie uruchomi się.
 - (Idź do Wyczyść > Formatuj dane > wpisz yes)
 
