@@ -33,7 +33,7 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `list volume` to find it, replace `$` with the actual number of **WIN**
+> Use `list volume` to find it, replace `$` with the actual number of **WINDIPPER**
 ```diskpart
 select volume $
 ``` 
@@ -44,7 +44,7 @@ assign letter x
 ``` 
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, replace `$` with the actual number of **ESP**
+> Use `list volume` to find it, replace `$` with the actual number of **ESPDIPPER**
 ```diskpart
 select volume $
 ``` 
