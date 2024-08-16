@@ -125,7 +125,7 @@ adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINDIPPER
 adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
 ```
 
-#### Formatting data
+### Formatting data
 - Format all data in TWRP, or Android will not boot.
 - ( Go to Wipe > Format data > type yes )
 
