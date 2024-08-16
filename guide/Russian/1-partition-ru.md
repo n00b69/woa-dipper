@@ -115,11 +115,21 @@ set $ esp on
 quit
 ```
 
-#### Отформатировать data
+### Отформатировать раздел Windows
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINDIPPER
+``` 
+
+### Отформатировать раздел ESP
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
+```
+
+### Отформатировать data
 - Отформатируйте все данные в TWRP, иначе Android не загрузится.
 - (Перейдите к `Wipe` > `Format data` > напечатайте `yes`)
 
-### Проверьте, запускается ли Android 
+#### Проверьте, запускается ли Android 
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 ## [Следующий шаг: Получение root прав](2-root-ru.md)
