@@ -28,36 +28,13 @@ fastboot boot path\to\dipper-uefi.img
 diskpart
 ```
 
-#### Znajdowanie telefonu
-> Spowoduje to wyświetlenie listy wszystkich podłączonych dysków
-```cmd
-lis dis
+#### Wybieranie partycji Windows
+> Wpisz `list Volume`, aby ją znaleźć, zamień `$` na rzeczywistą liczbę **WINDIPPER**
+```diskpart
+select volume $
 ```
 
-#### Wybieranie telefonu
-> Zastąp $ rzeczywistym numerem partycji telefonu (powinien być ostatnim)
-```cmd
-sel dis $
-```
-
-#### Lista partycji Twojego telefonu
-> Spowoduje to wyświetlenie listy partycji urządzenia
-```cmd
-lis par
-```
-
-#### Wybór partycji Windows
-> Zastąp $ numerem partycji systemu Windows (powinno być 23)
-```cmd
-sel par $
-```
-
-#### Formatowanie dysku z systemem Windows
-```cmd
-format quick fs=ntfs label="WINDIPPER"
-```
-
-#### Dodaj literę do systemu Windows
+#### Dodanie litery do systemu Windows
 ```cmd
 assign letter x
 ```
@@ -66,6 +43,9 @@ assign letter x
 ```cmd
 exit
 ```
+
+#### Formatting Windows
+> Go to Windows Explorer > This PC and select **WINDIPPER**. Right click and format as NTFS.
 
 ### Installing Windows
 > Zamień `path\to\install.esd` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim)
