@@ -117,7 +117,7 @@ quit
 
 ### Formatowanie dysku z systemem Windows
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINDIPPER
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINDIPPER
 ``` 
 
 ### Formatowanie dysku z systemem ESP
