@@ -7,9 +7,9 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
-  
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
+- [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
 ### Boot into the UEFI
 > Replace `path\to\dipper-uefi.img` with the actual path of the UEFI image
