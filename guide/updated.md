@@ -2,7 +2,7 @@
 
 # Running Windows on the Xiaomi Mi 8
 
-## Updating drivers (old method)
+## Updating drivers
 
 ### Prerequisites
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
