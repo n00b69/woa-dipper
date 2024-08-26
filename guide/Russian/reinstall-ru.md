@@ -5,11 +5,11 @@
 ## Переустановка Windows
 
 ### Требования
+- [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
 - [Образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
-  
-- [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
 > Замените `путь\к\dipper-uefi.img` действительным путём к образу UEFI
@@ -48,15 +48,15 @@ exit
 > Перейдите в Проводник Windows > Этот компьютер и выберите **WINDIPPER**. Щелкните правой кнопкой мыши и отформатируйте как NTFS.
 
 ### Установка Windows
-> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
+> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim или 22631.2861.XXXXXXX.esd)
 ```cmd
 dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:<путь\к\install.esd>`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
 
 ### Установка драйверов
-> Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
+- Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` (Если появляется ошибка, запустите `OfflineUpdaterFix.cmd`)
 
 > Введите букву диска **WINDIPPER** (должна быть **X**) затем нажмите Enter
 
