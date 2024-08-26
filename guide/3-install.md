@@ -5,15 +5,15 @@
 ## Installing Windows
 
 ### Prerequisites
+- [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
 - [Windows on ARM image](https://worproject.com/esd)
   
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
 - [Devcfg (touch fix)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
 
-- [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
-
-### Boot to the UEFI
+### Boot into the UEFI
 > Replace `path\to\dipper-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\dipper-uefi.img
