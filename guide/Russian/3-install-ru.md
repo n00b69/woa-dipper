@@ -5,13 +5,13 @@
 ## Установка Windows
 
 ### Требования
+- [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
 - [Образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
 - [Devcfg исправления touch](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
-  
-- [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
 > Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
