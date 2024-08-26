@@ -6,10 +6,10 @@
 
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
-  
-- [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
 - [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+  
+- [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
 ### Uruchom do UEFI
 > Zastąp `ścieżka\do\dipper-uefi.img` rzeczywistą ścieżką obrazu UEFI
