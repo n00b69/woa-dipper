@@ -5,11 +5,13 @@
 ## Updating drivers
 
 ### Prerequisites
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
   
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-### Boot to the UEFI
+### Boot into the UEFI
 > Replace `path\to\dipper-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\dipper-uefi.img
@@ -26,31 +28,13 @@ fastboot boot path\to\dipper-uefi.img
 diskpart
 ```
 
-#### Finding your phone
-> This will list all connected disks
+#### Select Windows volume
+> Use `list volume` to find it, replace `$` with the actual number of **WINDIPPER**
 ```cmd
-lis dis
+select volume $
 ```
 
-#### Selecting your phone
-> Replace $ with the actual number of your phone (it should be the last one)
-```cmd
-sel dis $
-```
-
-#### Listing your phone's partitions
-> This will list your device's partitions
-```cmd
-lis par
-```
-
-#### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 23)
-```cmd
-sel par $
-```
-
-#### Add letter to Windows
+#### Assign the letter X
 ```cmd
 assign letter x
 ```
@@ -61,14 +45,22 @@ exit
 ```
 
 ### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
+> [!Note]
+> This process will take +- 20 minutes. Do not worry, this is normal.
+
+- Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
 > If it asks you to enter a letter, enter the drive letter of **WINDIPPER** (which should be **X**), then press enter
 
-#### Boot back into Windows
-> Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
+#### Reboot your device
+> Make sure to also change the UEFI image in Android, otherwise you may face a "blue screen of death" (BSoD) when booting Windows later.
+```cmd
+adb reboot
+```
 
 ## Finished!
+
+
 
 
 
