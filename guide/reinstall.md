@@ -5,13 +5,13 @@
 ## Reinstalling Windows
 
 ### Prerequisites
-- [Windows on ARM image](https://worproject.com/esd)
+- [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
+- [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
-
-### Boot to the UEFI
+### Boot into the UEFI
 > Replace `path\to\dipper-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\dipper-uefi.img
