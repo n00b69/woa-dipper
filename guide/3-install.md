@@ -7,7 +7,7 @@
 ### Prerequisites
 - [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-- [Windows on ARM image](https://worproject.com/esd)
+- [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
