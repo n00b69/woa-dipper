@@ -116,6 +116,8 @@ quit
 ```
 
 ### Formatowanie dysku z systemem Windows
+> [!note]
+> If this command and the next one fails (for example: "Failed to access `/dev/block/by-name/win`: No such file or directory"), reboot your phone, then boot back into the recovery provided in the guide and try again
 ```cmd
 adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINDIPPER
 ``` 
