@@ -5,7 +5,7 @@
 ## Tworzenie partycji
 
 ### Wymagania
-- Mózg (najważniejsze ze wszystkich)
+- Odblokowany bootloader
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
