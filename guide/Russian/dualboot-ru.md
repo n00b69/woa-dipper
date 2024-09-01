@@ -2,11 +2,9 @@
 
 # Запуск Windows на Xiaomi Mi 8
 
-## Dualboot guide
+## Dualboot гайд
 
 ### Требования
-- [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
-
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
 - [Приложение WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
@@ -22,19 +20,24 @@
 > Если папка `/sdcard/Windows` пустая, ваше ПЗУ не поддерживает монтирование, и вам придётся создать резервную копию boot.img внутри приложения, а затем вручную скопировать её в Windows после загрузки (например, загрузив её куда-нибудь, а затем скачав после загрузки в Windows). The same applies to the StA files, which are also generated in your internal storage.
 >
 > Сделайте тоже самое если папка доступна только для чтения.
-- Вернитесь в приложение WOA Helper и нажмите кнопку `БЫСТРАЯ ЗАГРУЗКА В WINDOWS`.
+- Вернитесь в приложение WOA Helper и нажмите кнопку **БЫСТРАЯ ЗАГРУЗКА В WINDOWS**.
   
 ### Установка - Windows
 > [!Tip]
-> If this is your first time booting Windows and you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
-- Перейдите к C:\sta и создайте ярлык `sta.exe` на своём рабочем столе, if one isn't already present
+> Если вы загружаете Windows впервые и хотите пропустить вход в учетную запись Microsoft, нажмите кнопку **У меня нет интернета** на странице Wi-Fi, а затем при появлении соответствующего запроса нажмите кнопку **Продолжить с ограниченной настройкой**.
+- Перейдите к `C:\sta` и создайте ярлык **sta.exe** на своём рабочем столе.
 
 #### Загрузка на Android
 - Запустите новый ярлык на своем рабочем столе (вы также можете прикрепить его к меню "Пуск" / панели задач для удобства доступа).
 
 #### Загрузка в Windows
-- Нажмите `БЫСТРАЯ ЗАГРУЗКА В WINDOWS` в приложении или воспользуйтесь только что созданным переключателем на панели быстрых настроек.
-  
+- Нажмите **БЫСТРАЯ ЗАГРУЗКА В WINDOWS** в приложении или воспользуйтесь только что созданным переключателем на панели быстрых настроек.
+
+> [!Important]
+> Если вы когда-либо обновите или измените ПРОШИВКУ Android, обязательно создайте новую резервную копию boot.img (после рутирования телефона!) и поместите ее в папку C:\ в Windows, перезаписав старый файл.
+> 
+> Для этого вы можете использовать функцию **БЭКАП ОБРАЗА BOOT** в приложении WOA Helper.
+
 ## Готово!
 
 
