@@ -83,25 +83,25 @@ rm $
 #### Recreating userdata
 > Replace **1611MB** with the former start value of **userdata** which we just deleted
 >
-> Replace **32GB** with the end value you want **userdata** to have
+> Replace **64GB** with the end value you want **userdata** to have. In this example your available usable space in Android will be 64GB-1611MB = **62.4GB**
 ```cmd
-mkpart userdata ext4 1611MB 32GB
+mkpart userdata ext4 1611MB 64GB
 ```
 
 #### Creating ESP partition
-> Replace **32GB** with the end value of **userdata**
+> Replace **64GB** with the end value of **userdata**
 >
-> Replace **32.3GB** with the value you used before, adding **0.3GB** to it
+> Replace **64.3GB** with the value you used before, adding **0.3GB** to it
 ```cmd
-mkpart esp fat32 32GB 32.3GB
+mkpart esp fat32 64GB 64.3GB
 ```
 
 #### Creating Windows partition
-> Replace **32.3GB** with the end value of **esp**
+> Replace **64.3GB** with the end value of **esp**
 >
 > Replace **123GB** with the end value of your disk, use `p free` to find it
 ```cmd
-mkpart win ntfs 32.3GB 123GB
+mkpart win ntfs 64.3GB 123GB
 ```
 
 #### Making ESP bootable
@@ -115,24 +115,22 @@ set $ esp on
 quit
 ```
 
-### Formatting Windows drive
-> [!note]
-> If this command and the next one fails (for example: "Failed to access `/dev/block/by-name/win`: No such file or directory"), reboot your phone, then boot back into the recovery provided in the guide and try again
-```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINDIPPER
-``` 
-
-### Formatting ESP drive
-```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
-```
-
 ### Formatting data
 - Format all data in TWRP, or Android will not boot.
 - ( Go to Wipe > Format data > type yes )
 
 #### Check if Android still starts
 - Just restart the phone, and see if Android still works
+
+### Formatting Windows and ESP drives
+> Reboot into the modded TWRP, then run the below two commands
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINDIPPER
+``` 
+
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
+```
 
 ## [Next step: Rooting your phone](/guide/2-root.md)
 
