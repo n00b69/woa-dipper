@@ -5,6 +5,8 @@
 ## Reinstalling Windows
 
 ### Prerequisites
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+
 - [Modded OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
 
 ### Boot into OFOX
