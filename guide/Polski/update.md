@@ -7,21 +7,23 @@
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
   
 - [Sterowniki](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-### Uruchom do UEFI
-> Zastąp `ścieżka\do\dipper-uefi.img` rzeczywistą ścieżką obrazu UEFI
+- [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
+### Uruchomienie recovery OFOX
+> Jeśli recovery zostało zastąpione recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
-fastboot boot ścieżka\do\dipper-uefi.img
+fastboot flash recovery ścieżka\do\modded-ofox-dipper.img reboot recovery
 ```
 
 #### Włączanie trybu pamięci masowej
-> Po uruchomieniu systemu UEFI użyj przycisków głośności do poruszania się po menu i przycisku zasilania, aby potwierdzić
-- Wybierz **UEFI Boot Menu**.
-- Wybierz **USB Attached SCSI (UAS) Storage**.
-- Naciśnij przycisk dwa razy aby potwierdzić.
+> Jeżeli zostałeś poproszony, aby wykonać polecenie jeszcze raz, zrób to
+```cmd
+adb shell msc
+```
 
 ### Diskpart
 ```cmd
