@@ -9,9 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
-
-- [Parted](https://github.com/n00b69/woa-dipper/releases/download/Files/parted)
+- [Модифицированный OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
 
 ### Заметки 
 > [!WARNING]  
@@ -32,10 +30,10 @@
 cd путь\к\platform-tools
 ```
 
-#### Прошейте TWRP recovery
+#### Прошейте OFOX recovery
 > Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
 ```cmd
-fastboot flash recovery путь\к\twrp.img reboot recovery
+fastboot flash recovery путь\к\modded-ofox-dipper.img reboot recovery
 ```
 
 ### Создание резервной копии важных файлов
@@ -54,84 +52,15 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 adb pull /dev/block/by-name/boot boot.img
 ```
 
-### Руководство по разметке
-> Ваш Xiaomi Mi 8 может иметь разный объем памяти. В данном руководстве в качестве примера используются значения для модели емкостью 128 ГБ. При необходимости в руководстве будет указано, можно или нужно ли использовать другие значения.
-
-#### Размантируйте data
+### Запустите скрипт разметки 
+> Замените **$** объёмом памяти, который вы хотите выделить для Windows (не добавляйте ГБ, просто введите число).
+> 
+> Если скрипт попросит запустить его ещё раз, то так и сделайте
 ```cmd
-adb shell umount /dev/block/by-name/userdata
+adb shell partition $
 ```
 
-#### Подгатовка к разметке 
-> Скачайте файл parted и переместите его в папку platform-tools, затем запустите
-```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
-```
-
-#### Отобразить текущую таблицу разделов
-> Parted выведет список разделов, userdata должна быть последним разделом в списке.
-```cmd
-print
-```
-
-#### Удалить userdata
-> Замените **`$`** номером раздела **`userdata`**, должен быть **`21`**
-```cmd
-rm $
-```
-
-#### Заново создать userdata
-> Замените **1611MB** с прежним начальным значением **userdata** который мы только что удалили (вероятно, это 1611МБ)
->
-> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела
-```cmd
-mkpart userdata ext4 1611MB 32GB
-```
-
-#### Создать раздел ESP
-> Замените **32GB** с конечным значением **userdata**
->
-> Замените **32.3GB** тем значением, которое вы использовали ранее, добавив к нему **0.3GB**
-```cmd
-mkpart esp fat32 32GB 32.3GB
-```
-
-#### Создать раздел Windows
-> Замените **32.3GB** с конечным значением **esp**
->
-> Замените **123GB** на конечное значение вашего диска, используйте `p free`, чтобы найти его
-```cmd
-mkpart win ntfs 32.3GB 123GB
-```
-
-#### Сделать ESP загрузочным
-> Используйте `print` чтобы отобразиь все разделы. Замените `$` с вашим номером раздела ESP, который должен быть 22
-```cmd
-set $ esp on
-```
-
-#### Выйти из parted
-```cmd
-quit
-```
-
-### Отформатировать раздел Windows
-> [!note]
-> If this command and the next one fails (for example: "Failed to access `/dev/block/by-name/win`: No such file or directory"), reboot your phone, then boot back into the recovery provided in the guide and try again
-```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINDIPPER
-``` 
-
-### Отформатировать раздел ESP
-```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
-```
-
-### Отформатировать data
-- Отформатируйте все данные в TWRP, иначе Android не загрузится.
-- (Перейдите к `Wipe` > `Format data` > напечатайте `yes`)
-
-#### Проверьте, запускается ли Android 
+### Проверьте, запускается ли Android 
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 ## [Следующий шаг: Получение root прав](2-root-ru.md)
