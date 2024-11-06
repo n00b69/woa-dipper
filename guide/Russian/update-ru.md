@@ -7,21 +7,23 @@
 ### Требования
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
+- [Модифицированный OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+  
+- [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
+  
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-- [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
-
-### Загрузитесь в UEFI
-> Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
+### Прошейте OFOX recovery
+> Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
-fastboot boot путь\к\dipper-uefi.img
+fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
 ```
 
 #### Включите режим mass storage
-> После загрузки в UEFI используйте кнопки регулировки громкости для навигации по меню и кнопку питания для подтверждения
-- Выберите **UEFI Boot Menu**.
-- Выберите **USB Attached SCSI (UAS) Storage**.
-- Нажмите кнопку **питания** дважды чтобы подтвердить.
+> Если он попросит вас запустить его ещё раз, сделайте это
+```cmd
+adb shell msc
+```
 
 ### Diskpart
 ```cmd
@@ -29,7 +31,7 @@ diskpart
 ```
 
 #### Выбрать раздел Windows 
-> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINPOLARIS**
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINDIPPER**
 ```diskpart
 select volume $
 ```
@@ -50,7 +52,7 @@ exit
 
 - Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` (Если появляется ошибка, запустите `OfflineUpdaterFix.cmd`)
 
-> Введите букву диска **WINPOLARIS** (должна быть **X**) затем нажмите Enter
+> Введите букву диска **WINDIPPER** (должна быть **X**) затем нажмите Enter
 
 ### Reboot your device
 > Не забудьте также заменить образ UEFI в Android, иначе вы можете столкнуться с "синим экраном смерти" (BSoD) при последующей загрузке в Windows.
@@ -59,6 +61,25 @@ adb reboot
 ```
 
 ## Готово!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
