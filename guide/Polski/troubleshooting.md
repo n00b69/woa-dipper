@@ -50,11 +50,6 @@ Włącz tryb hosta USB, korzystając z [przewodnika dotyczącego przełączania 
 
 ##### Skończone!
 
-## Błąd DISM: 87 Opcja dodawania sterownika jest nieznana
-Zwykle oznacza to, że masz nieczysty obraz systemu Windows z innymi sterownikami. Musisz uzyskać czysty obraz systemu Windows (co oznacza, że ​​nie postępowałeś zgodnie z instrukcjami).
-
-##### Skończone!
-
 ## BSOD 0xc000021a
 Zwykle oznacza to, że plik winlogon.exe nie powiódł się i może być konieczne ponowne zastosowanie obrazu systemu Windows.
 
