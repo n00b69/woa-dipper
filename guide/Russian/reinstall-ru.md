@@ -15,6 +15,29 @@
 fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
 ```
 
+#### Отформатировать раздел Windows
+```cmd
+adb shell format
+```
+
+## [Следующий шаг: Установка Windows](3-install-ru.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
