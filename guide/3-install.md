@@ -5,7 +5,7 @@
 ## Installing Windows
 
 ### Prerequisites
-- [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+- [Modded OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
@@ -13,17 +13,19 @@
 
 - [Devcfg (touch fix)](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
 
-### Boot into the UEFI
-> Replace `path\to\dipper-uefi.img` with the actual path of the UEFI image
+- [UEFI image](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
+
+### Boot into OFOX recovery
+> If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
-fastboot boot path\to\dipper-uefi.img
+fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
 ```
 
 #### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+> If it asks you to run it once again, do so
+```cmd
+adb shell msc
+```
 
 ### Diskpart
 > [!WARNING]
