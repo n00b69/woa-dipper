@@ -108,7 +108,9 @@ mountvol y: /d
 ```
 
 ### Перезагрузитесь в fastboot
-> Удерживайте кнопку **уменьшение громкости** + **питание**, чтобы перезагрузить телефон в режим fastboot
+```cmd
+adb reboot bootloader
+```
 
 ### Исправить touch
 > Перезагрузитесь в fastboot, затем замените `путь\к\devcfg-dipper.img` путём к образу
@@ -118,6 +120,9 @@ fastboot flash devcfg_ab путь\к\devcfg-dipper.img
 
 #### Загрузитесь в UEFI
 > Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
+
+> [!Important]
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
 ```cmd
 fastboot boot путь\к\dipper-uefi.img
 ```
