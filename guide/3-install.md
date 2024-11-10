@@ -109,7 +109,9 @@ mountvol y: /d
 ```
 
 ### Reboot to fastboot
-> Hold **volume down** + **power** to force reboot your phone into fastboot mode
+```cmd
+adb reboot bootloader
+```
 
 ### Fixing touch
 > Replace `path\to\devcfg-dipper.img` with the actual path to the image
