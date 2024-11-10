@@ -81,6 +81,7 @@ dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINDIPPER** (którą powinna być **X**), a następnie naciśnij enter.
 
 #### Tworzenie plików bootloadera systemu Windows
+> If any error shows up, such as "Failure when attempting to copy boot files", open `diskpart` again and assign any new letter to **ESPDIPPER**, then replace the letter `Y` in the next commands with the letter that you just added.
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
@@ -107,7 +108,9 @@ mountvol y: /d
 ```
 
 ### Uruchamianie ponownie w trybie fastboot
-> Przytrzymaj **zmniejszanie głośności** + **zasilanie**, aby wymusić ponowne uruchomienie telefonu w trybie fastboot
+```cmd
+adb reboot bootloader
+```
 
 ### Naprawianie dotyku
 > Zastąp `ścieżka\do\devcfg-dipper.img` rzeczywistą ścieżką obrazu
@@ -117,6 +120,9 @@ fastboot flash devcfg_ab ścieżka\do\devcfg-dipper.img
 
 #### Uruchamianie do UEFI
 > Zastąp `ścieżka\do\dipper-uefi.img` rzeczywistą ścieżką obrazu UEFI
+
+> [!Important]
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
 ```cmd
 fastboot boot ścieżka\do\dipper-uefi.img
 ```
