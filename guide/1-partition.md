@@ -149,6 +149,9 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
 adb shell partition $
 ``` 
 
+### Check if Android still starts
+- Just restart the phone, and see if Android still works
+
 </details>
 
 ## [Next step: Rooting your phone](/guide/2-root.md)
