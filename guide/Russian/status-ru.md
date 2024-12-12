@@ -3,7 +3,7 @@
 # Запуск Windows на Xiaomi Mi 8
 
 ## Статус проекта 
-Проект находится в стадии разработки. Ожидайте некоторых обновлений в будущем.
+This project is currently not being maintained, updates may eventually appear, but don't expect them frequently or at all
 
 #### Функции 
 - [ ] Аудио 
@@ -15,6 +15,7 @@
 - [x] Зарядка ```ОЧЕНЬ медленно```
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```
+- [ ] SD карта
 - [ ] СМС
 - [x] Тачскрин
 - [x] UFS
