@@ -122,7 +122,7 @@ fastboot flash devcfg_ab путь\к\devcfg-dipper.img
 > Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
 
 > [!Important]
-> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup, which will then require a reinstall
 ```cmd
 fastboot boot путь\к\dipper-uefi.img
 ```
