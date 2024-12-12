@@ -11,7 +11,7 @@ This project is currently not being maintained, updates may eventually appear, b
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] LTE ```Problematic```
+- [x] LTE
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
