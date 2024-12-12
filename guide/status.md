@@ -3,7 +3,7 @@
 # Running Windows on the Xiaomi Mi 8
 
 ## Project Status
-This project is not actively maintained, updates may eventually appear, but don't expect them frequently
+This project is currently not being maintained, updates may eventually appear, but don't expect them frequently or at all
 
 #### Features
 - [ ] Audio 
@@ -15,6 +15,7 @@ This project is not actively maintained, updates may eventually appear, but don'
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
+- [ ] SD card
 - [ ] SMS
 - [x] Touchscreen 
 - [x] UFS
