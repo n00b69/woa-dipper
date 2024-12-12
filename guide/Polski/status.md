@@ -3,7 +3,7 @@
 # Windows na Xiaomi Mi 8
 
 ## Status Projektu
-Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić się, ale nie należy się ich spodziewać często
+This project is currently not being maintained, updates may eventually appear, but don't expect them frequently or at all
 
 #### Funkcje
 - [ ] Dzwięk
@@ -16,6 +16,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [x] Wyświetlacz
 - [ ] Latarka
 - [x] Karta Graficzna  ```Brak x64```
+- [ ] Karta SD
 - [ ] SMS
 - [x] Dotyk 
 - [x] UFS
