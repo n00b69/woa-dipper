@@ -11,7 +11,7 @@ This project is currently not being maintained, updates may eventually appear, b
 - [x] Bluetooth
 - [x] Яркость
 - [ ] Камера
-- [x] LTE ```if LTE does not work, follow [these steps](troubleshooting-ru.md#lte-in-windows-does-not-work)```
+- [x] LTE ```if LTE does not work, follow``` [these steps](troubleshooting.md#lte-in-windows-does-not-work)
 - [x] Зарядка ```ОЧЕНЬ медленно```
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```
