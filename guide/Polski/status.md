@@ -16,7 +16,6 @@ This project is currently not being maintained, updates may eventually appear, b
 - [x] Wyświetlacz
 - [ ] Latarka
 - [x] Karta Graficzna  ```Brak x64```
-- [ ] Karta SD
 - [ ] SMS
 - [x] Dotyk 
 - [x] UFS
