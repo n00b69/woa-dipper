@@ -15,7 +15,6 @@ This project is currently not being maintained, updates may eventually appear, b
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
-- [ ] SD card
 - [ ] SMS
 - [x] Touchscreen 
 - [x] UFS
