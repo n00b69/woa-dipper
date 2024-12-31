@@ -15,7 +15,6 @@ This project is currently not being maintained, updates may eventually appear, b
 - [x] Зарядка ```ОЧЕНЬ медленно```
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```
-- [ ] SD карта
 - [ ] СМС
 - [x] Тачскрин
 - [x] UFS
