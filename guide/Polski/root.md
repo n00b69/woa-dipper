@@ -9,12 +9,12 @@
 
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
+- [Zmodyfikowane recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-### Uruchom TWRP
+### Uruchom zmodyfikowane recovery
 > Jeśli Twoje recovery zostało przywrócone do stanu fabrycznego, wykonaj flashowanie ponownie w trybie fastboot za pomocą:
 ```cmd
-fastboot flash recovery path\to\twrp.img
+fastboot flash recovery path\to\modded-recoveey-dipper.img
 ```
 #### Tworzenie kopii zapasowej obrazu rozruchowego
 > Czasami flashowanie Magiska może spowodować bootloop. Aby to naprawić, musisz przywrócić kopię zapasową pliku boot.img.
