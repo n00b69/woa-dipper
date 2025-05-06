@@ -7,7 +7,7 @@
 ### Prerequisites
 - A rooted Xiaomi Mi 8
 
-- [Modified OFOX](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 - [Dipper WinInstaller](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
 
@@ -21,21 +21,21 @@
 - Download the Windows image and make sure it remains in the `Download` folder of your **internal storage**.
 - Download **WinInstaller.zip** and keep it in the `Download` folder as well.
 
-### Flash the modified OFOX
-> If you have a custom recovery installed, you can install the modified OFOX through there instead
-- Download the modified OFOX, rename it to **OFOX.img**, and leave in the `Download` folder **of your internal storage**.
+### Flash the modified recocwry
+> If you have a custom recovery installed, you can install the modified recovery through there instead
+- Download the modified recovery, rename it to **recovery.img**, and leave in the `Download` folder **of your internal storage**.
 - Download **Termux**, open it, and grant it root access.
-- Run the below command in Termux to flash OFOX:
+- Run the below command in Termux to flash the modified recovery:
 ```cmd
-su -c dd if=/sdcard/Download/OFOX.img of=/dev/block/by-name/recovery
+su -c dd if=/sdcard/Download/recovery.img of=/dev/block/by-name/recovery
 ```
-- Run the below command in Termux to reboot into OFOX:
+- Run the below command in Termux to reboot into the modified recovery:
 ```cmd
 su -c reboot recovery
 ```
 
-#### Opening OFOX terminal
-> Enter your password in OFOX, if it asks you to.
+#### Opening the recovery terminal
+> Enter your password in the recovery, if it asks you to.
 - Press the **Advanced** button on the bottom right of the screen, then press **Terminal**.
 
 ### Formatting Windows
@@ -44,13 +44,13 @@ format
 ```
 
 ### Checking if decryption works
-- Open the file explorer in OFOX, then navigate to your internal storage.
+- Open the file explorer in the recovery, then navigate to your internal storage.
 > If OFOX is not able to read/decrypt your internal storage, create a folder on your **USB stick** named `WOA` and put the **.esd** file and **WinInstaller.zip** in there instead
 >
-> Alternatively, find another OFOX image online that can actually decrypt and use it instead
+> Alternatively, find another recovery image online that can actually decrypt and use it instead
 
 ### Flashing WinInstaller
-- In OFOX, select **Install** and then locate **WinInstaller.zip** and flash it.
+- In the recovery, select **Install** and then locate **WinInstaller.zip** and flash it.
 - Once you're given the option to reboot, do so.
 > [!Note]
 > Wait until all processes complete and your device boots into Windows. This will take around 15-20 minutes.
