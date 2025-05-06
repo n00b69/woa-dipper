@@ -7,16 +7,16 @@
 ### Требования
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Модифицированный OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Модифицированный recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-recovery-dipper.img)
   
 - [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
   
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-### Прошейте OFOX recovery
+### Прошейте Модифицированный recovery
 > Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
-fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery path\to\modded-recovery-dipper.img reboot recovery
 ```
 
 #### Включите режим mass storage
