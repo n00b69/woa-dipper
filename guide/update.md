@@ -7,14 +7,14 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modded OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 - [Drivers](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-### Boot into OFOX recovery
+### Boot into the modified recovery
 > If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
-fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery path\to\modded-recovery-dipper.img reboot recovery
 ```
 
 #### Enabling mass storage mode
