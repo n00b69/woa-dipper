@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Zmodyfikowane recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 ### Uwagi
 > [!Warning]  
@@ -33,10 +33,10 @@ cd ścieżka\do\platform-tools
 > [!Note]
 > If your device is not detected in fastboot or recovery mode, you'll have to install USB drivers [using this guide](troubleshooting.md#device-is-not-recognized-in-fastboot-or-recovery)
 
-#### Flashuj zmodyfikowane recovery OFOX
+#### Flashuj zmodyfikowane recovery
 > Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie fastboot) wpisz
 ```cmd
-fastboot flash recovery ścieżka\do\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery ścieżka\do\modded-recovery-dipper.img reboot recovery
 ```
 
 ### Tworzenie kopii zapasowej ważnych plików
@@ -120,7 +120,7 @@ quit
 ``` 
 
 ### Formatowanie danych
-- Sformatuj wszystkie dane w TWRP, w przeciwnym razie Android nie uruchomi się.
+- Sformatuj wszystkie dane w recovery, w przeciwnym razie Android nie uruchomi się.
 - (Idź do Wyczyść > Formatuj dane > wpisz yes) 
 
 #### Sprawdź, czy Android nadal się uruchamia
@@ -144,12 +144,12 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
   <summary><strong>Click here for method 2</strong></summary>
 
 ### Uruchom skrypt partycjonowania
-> Zastąp **$** ilością miejsca, jaką ma mieć system Windows (nie dodawaj GB, po prostu wpisz liczbę)
-> 
-> Jeśli poprosi Cię o ponowne uruchomienie, zrób to
+> After running the script, enter the size (in GB) that you want Windows to be
+>
+> Do not write **GB**, just the number (for example **50**)
 ```cmd
-adb shell partition $
-```
+adb shell partition
+``` 
 
 #### Sprawdź, czy Android nadal się uruchamia
 - Po prostu uruchom ponownie telefon i sprawdź, czy Android nadal działa
