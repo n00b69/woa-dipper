@@ -5,7 +5,7 @@
 ## Instalacja Windowsa
 
 ### Wymagania
-- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Zmodyfikowane recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 - [Windows na ARM](https://arkt-7.github.io/woawin/)
   
@@ -15,10 +15,10 @@
 
 - [Obraz UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-### Uruchomienie recovery OFOX
+### Uruchomienie zmodyfikowane recovery
 > Jeśli recovery zostało zastąpione recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
-fastboot flash recovery ścieżka\do\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery ścieżka\do\modded-recovery-dipper.img reboot recovery
 ```
 
 #### Włączanie trybu pamięci masowej
