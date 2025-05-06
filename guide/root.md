@@ -9,12 +9,12 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-dipper/releases/download/Files/twrp.img)
+- [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-### Boot TWRP
+### Boot into the modified recovery
 > If your recovery has been replaced back to stock, flash it again in fastboot with:
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery path\to\modded-recovery-dipper.img reboot recovery
 ```
 #### Backing up your boot image
 > Sometimes flashing Magisk can cause a bootloop. To fix this, you'll need to restore a boot.img backup.
