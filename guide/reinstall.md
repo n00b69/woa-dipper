@@ -7,12 +7,12 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modded OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Modded OFOX recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-### Boot into OFOX
+### Boot into the modified recovery
 > If MIUI has replaced your recovery, boot to fastboot and run
 ```cmd
-fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery path\to\modded-recovery-dipper.img reboot recovery
 ```
 
 #### Formatting the Windows partition
