@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Модифицированный OFOX](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Модифицированный recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 ### Заметки 
 > [!WARNING]  
@@ -33,10 +33,10 @@ cd путь\к\platform-tools
 > [!Note]
 > If your device is not detected in fastboot or recovery mode, you'll have to install USB drivers [using this guide](troubleshooting-ru.md#device-is-not-recognized-in-fastboot-or-recovery)
 
-#### Прошейте OFOX recovery
+#### Прошейте Модифицированный recovery
 > Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
 ```cmd
-fastboot flash recovery путь\к\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery путь\к\modded-recovery-dipper.img reboot recovery
 ```
 
 ### Создание резервной копии важных файлов
@@ -69,9 +69,14 @@ adb pull /dev/block/by-name/boot boot.img
 adb shell umount /dev/block/by-name/userdata
 ```
 
+#### Opening a shell
+```cmd
+adb shell
+```
+
 #### Подгатовка к разметке
 ```cmd
-adb shell parted /dev/block/sda
+parted /dev/block/sda
 ``` 
 
 #### Отобразить текущую таблицу разделов
@@ -144,12 +149,12 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
   <summary><strong>Нажмите здесь для метода 2</strong></summary> 
 
 ### Запустите скрипт разметки 
-> Замените **$** объёмом памяти, который вы хотите выделить для Windows (не добавляйте ГБ, просто введите число).
-> 
-> Если скрипт попросит запустить его ещё раз, то так и сделайте
+> After running the script, enter the size (in GB) that you want Windows to be
+>
+> Do not write **GB**, just the number (for example **50**)
 ```cmd
-adb shell partition $
-```
+adb shell partition
+``` 
 
 ### Проверьте, запускается ли Android 
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
