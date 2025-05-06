@@ -69,10 +69,19 @@ adb pull /dev/block/by-name/boot boot.img
 adb shell umount /dev/block/by-name/userdata
 ``` 
 
-#### Przygotowanie do partycjonowania
+#### Opening a shell
 ```cmd
-adb shell parted /dev/block/sda
-``` 
+adb shell
+```
+
+### Przygotowanie do partycjonowania
+$${\color{lightblue}🟦 Note}$$
+> If at any moment in parted you see an error prompting you to type "Yes/No" or "Ignore/Cancel", type `Yes` or `Ignore` depending on the situation to ignore the errors and continue.
+>
+> If you see any **udevadm** errors, you can ignore these as well.
+```cmd
+parted /dev/block/sda
+```
 
 #### Wyświetlanie aktualnej tablicy partycji
 > Parted wyświetli listę partycji, "userdata" powinenen być ostatnią partycją na liście.
