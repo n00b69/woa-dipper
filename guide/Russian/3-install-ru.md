@@ -5,7 +5,7 @@
 ## Установка Windows
 
 ### Требования
-- [Модифицированный OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Модифицированный recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 - [Образ ARM Windows](https://arkt-7.github.io/woawin/)
   
@@ -15,10 +15,10 @@
 
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
-### Прошейте OFOX recovery
+### Прошейте Модифицированный recovery
 > Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
-fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery path\to\modded-recovery-dipper.img reboot recovery
 ```
 
 #### Включите режим mass storage
