@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Modded OFOX recovery](https://github.com/n00b69/woa-dipper/releases/download/Files/modded-ofox-dipper.img)
+- [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 ### Notes
 > [!WARNING]  
@@ -31,10 +31,10 @@ cd path\to\platform-tools
 > [!Note]
 > If your device is not detected in fastboot or recovery mode, you'll have to install USB drivers [using this guide](troubleshooting.md#device-is-not-recognized-in-fastboot-or-recovery)
 
-#### Flash the modded OFOX recovery
+#### Flash the modded recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
-fastboot flash recovery path\to\modded-ofox-dipper.img reboot recovery
+fastboot flash recovery path\to\modded-recovery-dipper.img reboot recovery
 ```
 
 ### Backing up important files
@@ -121,7 +121,7 @@ quit
 ``` 
 
 ### Formatting data
-- Format all data in TWRP, or Android will not boot.
+- Format all data in recovery, or Android will not boot.
 - ( Go to Wipe > Format data > type yes ) 
 
 #### Check if Android still starts
@@ -145,11 +145,11 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
   <summary><strong>Click here for method 2</strong></summary> 
 
 ### Run the partitioning script
-> Replace **$** with the amount of storage you want Windows to have (do not add GB, just write the number)
-> 
-> If it asks you to run it once again, do so
+> After running the script, enter the size (in GB) that you want Windows to be
+>
+> Do not write **GB**, just the number (for example **50**)
 ```cmd
-adb shell partition $
+adb shell partition
 ``` 
 
 ### Check if Android still starts
