@@ -74,10 +74,14 @@ adb shell umount /dev/block/by-name/userdata
 adb shell
 ```
 
-#### Подгатовка к разметке
+### Подгатовка к разметке
+$${\color{lightblue}🟦 Note}$$
+> If at any moment in parted you see an error prompting you to type "Yes/No" or "Ignore/Cancel", type `Yes` or `Ignore` depending on the situation to ignore the errors and continue.
+>
+> If you see any **udevadm** errors, you can ignore these as well.
 ```cmd
 parted /dev/block/sda
-``` 
+```
 
 #### Отобразить текущую таблицу разделов
 > Parted выведет список разделов, userdata должна быть последним разделом в списке.
