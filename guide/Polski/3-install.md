@@ -62,9 +62,6 @@ exit
 ```
 
 ### Instalowanie Windowsa
-> [!WARNING]
-> NIE UŻYWAJ 24H2!!!
-
 > Zamień `ścieżka\do\install.esd` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim lub 22631.2861.XXXXXXX.esd)
 ```cmd
 dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
