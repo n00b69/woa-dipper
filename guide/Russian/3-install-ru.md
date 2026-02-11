@@ -11,7 +11,7 @@
   
 - [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Devcfg исправления touch](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
+- [Devcfg для исправления touch](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
 
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
@@ -63,14 +63,14 @@ exit
 
 ### Установка Windows
 > [!Important]
-> Do not install, or update to, Windows 11 25H2 26200.7XXX or higher! You will not be able to boot into this build due to a BSoD issue!
-
 > Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim или 22631.2861.XXXXXXX.esd)
+
+> По причине производительности, рекомендуется использовать Windows 11 25H2 (которые начинаются как 262XX, например 26200.6713)
 ```cmd
 dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом **Windows 11 Pro** в вашем образе
 
 ### Копирование вашего boot.img в Windows
 - Перетащите **rooted_boot.img** на диск **WINDIPPER** в проводнике Windows, затем переименуйте его в **boot.img**.
@@ -112,7 +112,7 @@ mountvol y: /d
 adb reboot bootloader
 ```
 
-### Исправить touch
+### Как исправить touch
 > Перезагрузитесь в fastboot, затем замените `путь\к\devcfg-dipper.img` путём к образу
 ```cmd
 fastboot flash devcfg_ab путь\к\devcfg-dipper.img
@@ -122,12 +122,12 @@ fastboot flash devcfg_ab путь\к\devcfg-dipper.img
 > Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
 
 > [!Important]
-> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup, which will then require a reinstall
+> Отклюсите все usb кабель после выхода из fastboot экрана, или windows может крашнуться, после чего потребуется переустановка
 ```cmd
 fastboot boot путь\к\dipper-uefi.img
 ```
 
-### Reboot to Android
-Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
+### Перезагрузка в Android
+Ваше устройство само должно перезагрузтся примерно через +- 10 минут oожидания, после чего вы загрузитесь в android, для последнего этапа.
 
 ## [Последний шаг: Настройка двойной загрузки](4-dualboot-ru.md)

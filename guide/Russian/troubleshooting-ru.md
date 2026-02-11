@@ -5,11 +5,11 @@
 ## Исправление Проблем 
 > Ниже вы найдете список распространенных проблем и путей их решения
 
-## LTE and other network services in Android no longer work
-> Sometimes Windows may wipe your modem partitions, resulting in the loss of LTE in Android. To fix this, you'll need to restore your modem using the backups that you hopefully made [while partitioning your device](1-partition.md#backing-up-important-files). If you did not do this step, there is likely no way to recover.
-- Boot into any recovery other than the stock recovery (ADB commands do not work there)
-- Open CMD in the **platform-tools** folder.
-- Restore the four partitions that you backed up using the below commands. Replace `path\to` with the actual path of the images.
+## Интернет в android перестал работать
+> Иногда windows может сстреть раздел modem, в результате чего вы теряете доступ к интернету из android. Что бы исправить это вам нужно восстановить раздел используя бекап который вы сделали [когда размечали ваше устройство](1-partition.md#backing-up-important-files). Если вы не сделали это, скорее всего нету возможности для восстановления.
+- Загрузитесь в любое рекавери, отличное от стокового (ADB команды не работают тут)
+- Откройте командную строку в папке **platform-tools**.
+- Восстановите разделы этими командами. Замените `path\to` на путь к образу.
 ```cmd
 adb push path\to\fsc.bin /cache/ & adb shell dd if=/cache/fsc.bin of=/dev/block/by-name/fsc
 ```
@@ -25,36 +25,36 @@ adb push path\to\modemst1.bin /cache/ & adb shell dd if=/cache/modemst1.bin of=/
 ```cmd
 adb push path\to\modemst2.bin /cache/ & adb shell dd if=/cache/modemst2.bin of=/dev/block/by-name/modemst2
 ```
-- Reboot your device and check if LTE works.
+- Перезагрузитесь и проверьте работу интернета.
 > [!Note]
-> If it still does not work, you will have to do some additional steps;
-- Download the [stock rom for your device](https://xmfirmwareupdater.com/miui/dipper/)
-- Open it, look for a file called **modem.img** and extract it.
-- Boot into fastboot mode (`adb reboot bootloader`).
-- Flash this **modem.img** with the below command, replacing `path\to\modem.img` with the actual path of the image
+> 
+> Если интернет не начал работать;
+- Скачайте [стоковую прошивку](https://xmfirmwareupdater.com/miui/polaris/)
+- откройте, вы должны найти файл с названием **modem.img** достаньте его.
+- Загрузитесь в режим fastboot(`adb reboot bootloader`).
+- Прошейте **modem.img** этой командой, заменив `path\to\modem.img` на путь к образу
 ```cmd
 fastboot flash modem path\to\modem.img
 ```
 
-##### Finished!
+##### Конец!
 
-## LTE in Windows does not work
+## Интернет не работает в windows
 > [!Note]
-> You may have to follow the steps above to restore your modem first
-- In Android, find your APN settings. It should be located in `Connections` > `Mobile Networks` > `Access Point Names`.
-- Write the information of your current APN settings down, then boot into Windows.
-- In `Cellular Settings`, click on `Mobile operator settings` > `APN settings` and add the APN settings you wrote down earlier.
-- Enable **Cellular**. It may say `No Internet Access`, but it should still work. 
+> Сначало надо пройти шаги по восстановлению раздела modem!
+- в андройд, найдите ваши APN settings. Iони должны находится в `Connections` > `Mobile Networks` > `Access Point Names`.
+- Запишите где то данные, затем загрузитесь в Windows.
+- В `Cellular Settings`, нажмите на `Mobile operator settings` > `APN settings` и добавьте ваши данные которые вы ранее записали.
+- Включите **Cellular**. windows может сказать `No Internet Access`, но он должен работать 
 
-##### Finished!
+##### Конец!
 
-## Device is not recognized in fastboot or recovery
-> This likely means you don't have (proper) USB drivers installed
-- Download [QUD.zip](https://github.com/n00b69/woa-betalm/releases/download/Qfil/QUD.zip) here and extract it.
-- Open Device Manager and find an unknown device or device with errors that may be called **Android**, **ADB Interface**, or **QUSB_BULK**.
-- Right click this devjce, select "Update Drivers" > "Browse files", then select the **QUD folder** you extracted before.
-
-##### Finished!
+## Телефон не определяется в компьютере
+> Скорее всего у вас не установлены, установлены неправиьно драйвера
+- Скачайте [QUD.zip](https://github.com/n00b69/woa-betalm/releases/download/Qfil/QUD.zip) и распакуйте.
+- Откройте диспетчер устройств aи найдите неизвестное устройство cили устройство с ошибкой и названием **Android**, **ADB Interface**, или **QUSB_BULK**.
+- Правой кнопкой мыши, выберите "Update Drivers" > "Browse files", и потом выберите **QUD folder** которое вы распаковали ранее.
+##### Конец!
 
 ## Не удается смонтировать Windows в Android
 Если при монтировании Windows образуется пустая папка, значит у вас не установлена Windows, либо в вашем ПЗУ нет поддержки монтирования.
