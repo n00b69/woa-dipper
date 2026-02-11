@@ -63,14 +63,14 @@ exit
 
 ### Установка Windows
 > [!Important]
-> Do not install, or update to, Windows 11 25H2 26200.7XXX or higher! You will not be able to boot into this build due to a BSoD issue!
-
 > Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim или 22631.2861.XXXXXXX.esd)
+
+> По причине производительности, рекомендуется использовать Windows 11 25H2 (которые начинаются как 262XX, например 26200.6713)
 ```cmd
 dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом **Windows 11 Pro** в вашем образе
 
 ### Копирование вашего boot.img в Windows
 - Перетащите **rooted_boot.img** на диск **WINDIPPER** в проводнике Windows, затем переименуйте его в **boot.img**.
