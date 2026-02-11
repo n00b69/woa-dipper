@@ -3,7 +3,7 @@
 # Запуск Windows на Xiaomi Mi 8
 
 ## Статус проекта 
-This project is currently not being maintained, updates may eventually appear, but don't expect them frequently or at all
+Проект в данный момент не поддерживается, обновления могут выходить, bно они не буду постоянными
 
 #### Функции 
 - [ ] Аудио 
