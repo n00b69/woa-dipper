@@ -1,7 +1,7 @@
 # Running Windows on the Xiaomi Mi 8
 
-## Installation selection
-There are two methods to install Windows. Select the method you would like to use below.
+## Варианты установки:
+Есть два метода установки
 
 | **Установка Windows вручную** | **Установка Windows используя автоматические скрипты** 
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ There are two methods to install Windows. Select the method you would like to us
 | - Highly customizable in regards to OS version, language, edition, storage allocation | - Highly customizable in regards to OS version, language, edition, storage allocation
 | - ПК необходим  | - Компьютер не требуется
 | - Легко устранять ошибки в случае их возникновения | - Трудно устранять ошибки в случае их возникновения
-| [Manual guide](1-partition-ru.md) | [No-PC guide](nopc-ru.md)
+| [Руччная установка](1-partition-ru.md) | [Установка без компьютера](nopc-ru.md)
 
 
 
