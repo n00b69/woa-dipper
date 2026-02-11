@@ -11,7 +11,7 @@
   
 - [Драйвера](https://github.com/n00b69/woa-dipper/releases/tag/Drivers)
 
-- [Devcfg исправления touch](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
+- [Devcfg для исправления touch](https://github.com/n00b69/woa-dipper/releases/download/Files/devcfg-dipper.img)
 
 - [Образ UEFI](https://github.com/n00b69/woa-dipper/releases/tag/UEFI)
 
