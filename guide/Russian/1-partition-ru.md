@@ -31,7 +31,7 @@ cd путь\к\platform-tools
 ```
 
 > [!Note]
-> If your device is not detected in fastboot or recovery mode, you'll have to install USB drivers [using this guide](troubleshooting-ru.md#device-is-not-recognized-in-fastboot-or-recovery)
+> Если ваше устройство не отображается в  fastboot или recovery mode, вам нужно установить драйвера [using this guide](troubleshooting-ru.md#device-is-not-recognized-in-fastboot-or-recovery)
 
 #### Прошейте Модифицированный recovery
 > Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
@@ -76,9 +76,9 @@ adb shell
 
 ### Подгатовка к разметке
 $${\color{lightblue}🟦 Note}$$
-> If at any moment in parted you see an error prompting you to type "Yes/No" or "Ignore/Cancel", type `Yes` or `Ignore` depending on the situation to ignore the errors and continue.
+> Если в любой момент ваш попросят написать "Yes/No" or "Ignore/Cancel", напишите `Yes` или `Ignore` не обращайте внимания на ошибку и продолжайте.
 >
-> If you see any **udevadm** errors, you can ignore these as well.
+> Если вы видите любую **udevadm** ошибку, вы можете спокойно ее игнорировать.
 ```cmd
 parted /dev/block/sda
 ```
@@ -159,9 +159,9 @@ adb shell fixgpt
   <summary><strong>Нажмите здесь для метода 2</strong></summary> 
 
 ### Запустите скрипт разметки 
-> After running the script, enter the size (in GB) that you want Windows to be
+> Псле запуска скрипта укажите  гигабайтах количество гигабайт, сколько выделить разделу windows (**например partition 60**)
 >
-> Do not write **GB**, just the number (for example **50**)
+>  не пишите **GB**, просто число (для примера **60**)
 ```cmd
 adb shell partition
 ``` 
