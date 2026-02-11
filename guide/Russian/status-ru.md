@@ -11,8 +11,8 @@ This project is currently not being maintained, updates may eventually appear, b
 - [x] Bluetooth
 - [x] Яркость
 - [ ] Камера
-- [x] LTE ```if LTE does not work, follow``` [these steps](troubleshooting-ru.md#lte-in-windows-does-not-work)
-- [x] Зарядка ```ОЧЕНЬ медленно```
+- [x] LTE ```Если LTE не работает воспользуйтесь инструкцией``` [these steps](troubleshooting-ru.md#lte-in-windows-does-not-work)
+- [x] Зарядка ```ОЧЕНЬ медленная```
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```
 - [ ] СМС
@@ -29,9 +29,5 @@ This project is currently not being maintained, updates may eventually appear, b
 - [ ] Датчик освещенности
 - [ ] Магнитометр
 - [ ] Датчик приближения 
-
-#### Безопасность 
-- [ ] Процессор обеспечения безопасности ```Невозможно заставить работать, Xiaomi сломали прошивку```
-- [ ] TPM (Поддерживаемое программное обеспечение)
 
 
