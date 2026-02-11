@@ -112,7 +112,7 @@ mountvol y: /d
 adb reboot bootloader
 ```
 
-### Исправить touch
+### Как исправить touch
 > Перезагрузитесь в fastboot, затем замените `путь\к\devcfg-dipper.img` путём к образу
 ```cmd
 fastboot flash devcfg_ab путь\к\devcfg-dipper.img
@@ -122,12 +122,12 @@ fastboot flash devcfg_ab путь\к\devcfg-dipper.img
 > Замените `путь\к\dipper-uefi.img` актуальным путём к образу UEFI
 
 > [!Important]
-> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup, which will then require a reinstall
+> Отклюсите все usb кабель после выхода из fastboot экрана, или windows может крашнуться, после чего потребуется переустановка
 ```cmd
 fastboot boot путь\к\dipper-uefi.img
 ```
 
 ### Reboot to Android
-Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
+ваше устройство само должно перезагрузтся примерно через +- 10 минут oожидания, после чего вы загрузитесь в android, для последнего этапа.
 
 ## [Последний шаг: Настройка двойной загрузки](4-dualboot-ru.md)
