@@ -16,7 +16,7 @@
 ## Начнём
 - [Статус Проекта](status-ru.md)
 
-- [Установка](1-partition-ru.md)
+- [Установка](install-selection-ru.md)
 
 - [Исправление проблем](troubleshooting-ru.md)
 
