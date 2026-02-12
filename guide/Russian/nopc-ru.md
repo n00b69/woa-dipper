@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on a Mi mix 2s">
+<img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on a Xiaomi Mi 8">
 
 # Запуск Windows на Xiaomi Mi mix 2s
 
@@ -7,9 +7,9 @@
 ### Требования
 - Рут на Xiaomi Mi 8
 
-- [Модифицированное рекавери](https://github.com/n00b69/woa-polaris/releases/tag/Recovery)
+- [Модифицированное рекавери](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Polaris WinInstaller](https://github.com/n00b69/woa-polaris/releases/download/Files/polarisWinInstaller.zip)
+- [Polaris WinInstaller](https://github.com/n00b69/woa-dipper/releases/download/Files/dipperWinInstaller.zip)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
