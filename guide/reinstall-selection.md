@@ -12,7 +12,7 @@ The only method to reinstall Windows is manual
 | - A PC is required |
 | - Can be done on any ROM and does not require a USB stick |
 | - Easy to troubleshoot in case of errors |
-| [Manual guide](reinstall.md)
+| [Manual guide](reinstall.md) |
 
 
 
