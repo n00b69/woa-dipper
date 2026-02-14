@@ -156,7 +156,8 @@ adb shell fixgpt
 > Do not write **GB**, just the number (for example **50**)
 ```cmd
 adb shell partition
-``` 
+```
+> Auto partition may not work
 
 ### Check if Android still starts
 - Just restart the phone, and see if Android still works
