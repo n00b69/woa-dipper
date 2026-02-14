@@ -9,7 +9,7 @@
 
 - [Модифицированное рекавери](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Polaris WinInstaller](https://github.com/tvorogo/woa-dipper/releases/tag/Files)
+- [Dipper WinInstaller](https://github.com/tvorogo/woa-dipper/releases/tag/Files)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
