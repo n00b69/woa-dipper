@@ -54,7 +54,7 @@ su -c reboot recovery
 ```cmd
 partition
 ``` 
-
+> Auto partition may not work in this case you will have to use the manual partition method from the PC method
 ### Check if Android still starts
 - Just restart the phone, and see if Android still works
 
