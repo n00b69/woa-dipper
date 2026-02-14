@@ -55,14 +55,6 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 adb pull /dev/block/by-name/boot boot.img
 ```
 
-### Przewodnik dotyczący partycjonowania
-> There are two methods to partition your device. Please select the method you would like to use below. 
-
-#### Method 1: Manual partitioning 
-
-<details>
-  <summary><strong>Click here for method 1</strong></summary> 
-
 #### Odmontuj dane
 > Ignore any possible errors and continue
 ```cmd
@@ -75,7 +67,7 @@ adb shell
 ```
 
 ### Przygotowanie do partycjonowania
-$${\color{lightblue}🟦 Note}$$
+> [!Note]
 > If at any moment in parted you see an error prompting you to type "Yes/No" or "Ignore/Cancel", type `Yes` or `Ignore` depending on the situation to ignore the errors and continue.
 >
 > If you see any **udevadm** errors, you can ignore these as well.
@@ -150,26 +142,6 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPDIPPER
 ```cmd
 adb shell fixgpt
 ```
-
-</details> 
-
-#### Method 2: Automatic partitioning 
-
-<details>
-  <summary><strong>Click here for method 2</strong></summary>
-
-### Uruchom skrypt partycjonowania
-> After running the script, enter the size (in GB) that you want Windows to be
->
-> Do not write **GB**, just the number (for example **50**)
-```cmd
-adb shell partition
-``` 
-
-#### Sprawdź, czy Android nadal się uruchamia
-- Po prostu uruchom ponownie telefon i sprawdź, czy Android nadal działa
-
-</details>
 
 ## [Następny krok: Rootowanie telefonu](2-root.md)
 
