@@ -13,7 +13,7 @@
 
 - [Dipper WinInstaller Old Stable](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
 
-- or
+  or
 
 - [Dipper WinInstaller New IDK](https://github.com/tvorogo/WinInstaller/releases/tag/DIPPPER_WinInstaller)
 
