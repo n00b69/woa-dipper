@@ -2,6 +2,8 @@
 
 # Running Windows on the Xiaomi Mi 8
 
+## Thiss method very unstable, we dont recommend to use 
+
 ## Installing Windows without a PC
 
 ### Prerequisites
@@ -9,7 +11,11 @@
 
 - [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Dipper WinInstaller](https://github.com/tvorogo/woa-dipper/releases/tag/Files)
+- [Dipper WinInstaller Old Stable](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
+
+- or
+
+- [Dipper WinInstaller New IDK](https://github.com/tvorogo/WinInstaller/releases/tag/DIPPPER_WinInstaller)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
