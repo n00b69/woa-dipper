@@ -12,8 +12,10 @@
 - [Модифицированное рекавери](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
 - [Dipper WinInstaller Новый Может быть нестабилен](https://github.com/tvorogo/woa-dipper/releases/tag/Files)
-
 Или
+- [Dipper WinInstaller Старый Стабиьнее](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
+
+
 
 - [Dipper WinInstaller Старый Стабиьнее](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
 
