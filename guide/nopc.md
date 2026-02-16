@@ -2,7 +2,7 @@
 
 # Running Windows on the Xiaomi Mi 8
 
-## This method very unstable, we dont recommend to use 
+## This method is very unstable. We do not recommend using it.
 
 ## Installing Windows without a PC
 
