@@ -13,7 +13,6 @@
 
 - [Dipper WinInstaller](https://github.com/Kumar-Jy/WinInstaller/releases/tag/Dipper_WinInstaller)
 
-- [Dipper WinInstaller Старый Стабиьнее](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
