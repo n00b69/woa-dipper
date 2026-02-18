@@ -11,11 +11,7 @@
 
 - [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Dipper WinInstaller Old Stable](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
-
-  or
-
-- [Dipper WinInstaller New IDK](https://github.com/tvorogo/WinInstaller/releases/tag/DIPPPER_WinInstaller)
+- [Dipper WinInstaller](https://github.com/Kumar-Jy/WinInstaller/releases/tag/Dipper_WinInstaller)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
