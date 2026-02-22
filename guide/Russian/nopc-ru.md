@@ -1,8 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-dipper/blob/main/dipper.png" width="350" alt="Windows 11 running on a Xiaomi Mi 8">
 
 # Запуск Windows на Xiaomi Mi 8
-
-## Метод крайне не стабилен и не рекомендуется к использованию, используйте только в крайней ситуации
  
 ## Установка Windows без компьютера 
 
