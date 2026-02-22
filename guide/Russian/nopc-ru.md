@@ -2,6 +2,8 @@
 
 # Запуск Windows на Xiaomi Mi 8
 
+## Метод крайне не стабилен и не рекомендуется к использованию, используйте только в крайней ситуации
+ 
 ## Установка Windows без компьютера 
 
 ### Требования
@@ -9,7 +11,8 @@
 
 - [Модифицированное рекавери](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Dipper WinInstaller](https://github.com/tvorogo/woa-dipper/releases/tag/Files)
+- [Dipper WinInstaller](https://github.com/Kumar-Jy/WinInstaller/releases/tag/Dipper_WinInstaller)
+
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
