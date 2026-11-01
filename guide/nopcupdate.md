@@ -9,7 +9,7 @@
 
 - [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Dipper WinInstaller](https://github.com/n00b69/woa-dipper/releases/download/Files/DipperWinInstaller.zip)
+- [Dipper WinInstaller](https://github.com/WOAFlasher/WinInstaller/releases/tag/Dipper_WinInstaller)
 
 ### Notes
 > [!WARNING]  
