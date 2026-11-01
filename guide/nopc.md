@@ -9,7 +9,7 @@
 
 - [Modded recovery](https://github.com/n00b69/woa-dipper/releases/tag/Recovery)
 
-- [Dipper WinInstaller](https://github.com/Kumar-Jy/WinInstaller/releases/tag/Dipper_WinInstaller)
+- [Dipper WinInstaller](https://github.com/WOAFlasher/WinInstaller/releases/tag/Dipper_WinInstaller)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
